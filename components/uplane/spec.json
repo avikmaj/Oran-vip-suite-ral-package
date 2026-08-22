@@ -1,0 +1,161 @@
+{
+  "slug": "uplane",
+  "spec_ref": "O-RAN.WG4.CUS \u00a77 U-plane Section Types 1/3/5/6",
+  "fields": [
+    {
+      "name": "version",
+      "w": 4,
+      "legal": {
+        "const": 1
+      }
+    },
+    {
+      "name": "section_type",
+      "w": 4,
+      "legal": {
+        "enum": [
+          1,
+          3,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "name": "numerology",
+      "w": 4,
+      "legal": {
+        "range": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "name": "start_prb",
+      "w": 9,
+      "legal": {
+        "range": [
+          0,
+          273
+        ]
+      }
+    },
+    {
+      "name": "num_prb",
+      "w": 9,
+      "legal": {
+        "range": [
+          1,
+          275
+        ]
+      }
+    },
+    {
+      "name": "symbol_id",
+      "w": 4,
+      "legal": {
+        "range": [
+          0,
+          13
+        ]
+      }
+    },
+    {
+      "name": "comp_type",
+      "w": 2,
+      "legal": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "name": "comp_bits",
+      "w": 5,
+      "legal": {
+        "range": [
+          9,
+          16
+        ]
+      }
+    },
+    {
+      "name": "seq",
+      "w": 8,
+      "legal": {
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "rsvd",
+      "w": 15,
+      "legal": {
+        "const": 0
+      }
+    }
+  ],
+  "cross": [
+    "start_prb + num_prb <= 275"
+  ],
+  "cover": [
+    {
+      "id": "COV-002",
+      "field": "section_type",
+      "kind": "enum",
+      "args": [
+        1,
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "COV-003",
+      "field": "numerology",
+      "kind": "enum",
+      "args": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "COV-005",
+      "field": "num_prb",
+      "kind": "bucket4",
+      "args": [
+        1,
+        275
+      ]
+    },
+    {
+      "id": "COV-007",
+      "field": "comp_type",
+      "kind": "enum",
+      "args": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "COV-009",
+      "field": "seq",
+      "kind": "wrap",
+      "args": [
+        0,
+        255
+      ]
+    }
+  ]
+}

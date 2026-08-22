@@ -1,0 +1,59 @@
+COVROW,band=0,numerology=2,scs=0,ssb_period=0,seq=107
+COVROW,band=0,numerology=3,scs=0,ssb_period=2,seq=0
+COVROW,band=0,numerology=2,scs=2,ssb_period=3,seq=0
+COVROW,band=0,numerology=4,scs=0,ssb_period=3,seq=51
+COVROW,band=0,numerology=2,scs=0,ssb_period=3,seq=97
+COVROW,band=0,numerology=4,scs=0,ssb_period=3,seq=187
+COVROW,band=0,numerology=2,scs=2,ssb_period=1,seq=15
+COVROW,band=0,numerology=2,scs=2,ssb_period=3,seq=0
+COVROW,band=0,numerology=3,scs=2,ssb_period=2,seq=66
+COVROW,band=0,numerology=3,scs=2,ssb_period=4,seq=182
+COVROW,band=0,numerology=4,scs=2,ssb_period=4,seq=0
+COVROW,band=0,numerology=4,scs=2,ssb_period=0,seq=0
+COVROW,band=0,numerology=3,scs=0,ssb_period=0,seq=150
+COVROW,band=0,numerology=3,scs=0,ssb_period=2,seq=0
+COVROW,band=0,numerology=4,scs=0,ssb_period=3,seq=218
+COVROW,band=0,numerology=4,scs=2,ssb_period=4,seq=164
+COVROW,band=0,numerology=2,scs=2,ssb_period=0,seq=152
+COVROW,band=0,numerology=4,scs=0,ssb_period=0,seq=235
+COVROW,band=0,numerology=3,scs=0,ssb_period=0,seq=199
+COVROW,band=0,numerology=2,scs=0,ssb_period=0,seq=69
+COVROW,band=0,numerology=3,scs=0,ssb_period=0,seq=120
+COVROW,band=0,numerology=2,scs=0,ssb_period=1,seq=130
+COVROW,band=0,numerology=2,scs=0,ssb_period=1,seq=53
+COVROW,band=0,numerology=2,scs=0,ssb_period=2,seq=114
+COVROW,band=0,numerology=2,scs=2,ssb_period=0,seq=0
+COVROW,band=0,numerology=4,scs=0,ssb_period=0,seq=230
+COVROW,band=0,numerology=2,scs=0,ssb_period=0,seq=244
+COVROW,band=0,numerology=4,scs=0,ssb_period=2,seq=160
+COVROW,band=0,numerology=4,scs=1,ssb_period=2,seq=132
+COVROW,band=0,numerology=3,scs=1,ssb_period=2,seq=0
+COVROW,band=0,numerology=3,scs=0,ssb_period=2,seq=51
+COVROW,band=0,numerology=2,scs=0,ssb_period=2,seq=11
+COVROW,band=0,numerology=3,scs=0,ssb_period=2,seq=0
+COVROW,band=0,numerology=3,scs=0,ssb_period=4,seq=0
+COVROW,band=0,numerology=2,scs=2,ssb_period=4,seq=32
+COVROW,band=0,numerology=3,scs=2,ssb_period=4,seq=87
+COVROW,band=0,numerology=3,scs=2,ssb_period=5,seq=70
+COVROW,band=0,numerology=3,scs=0,ssb_period=1,seq=0
+COVROW,band=0,numerology=2,scs=2,ssb_period=1,seq=0
+COVROW,band=0,numerology=2,scs=2,ssb_period=2,seq=0
+COVROW,band=0,numerology=2,scs=2,ssb_period=2,seq=128
+COVROW,band=0,numerology=3,scs=2,ssb_period=3,seq=20
+COVROW,band=0,numerology=3,scs=1,ssb_period=3,seq=41
+COVROW,band=0,numerology=3,scs=1,ssb_period=2,seq=61
+COVROW,band=0,numerology=2,scs=1,ssb_period=5,seq=10
+COVROW,band=0,numerology=3,scs=1,ssb_period=1,seq=0
+COVROW,band=0,numerology=4,scs=1,ssb_period=1,seq=0
+COVROW,band=0,numerology=2,scs=0,ssb_period=1,seq=191
+COVROW,band=0,numerology=3,scs=0,ssb_period=2,seq=179
+COVROW,band=0,numerology=3,scs=2,ssb_period=0,seq=0
+SBSUMMARY,txns=50,legal_err=0,pack_err=0,rt_err=0
+SVA_EXERCISED,legality=50,roundtrip=50,pack=50
+--- UVM Report Summary ---
+UVM_INFO :  50
+UVM_WARNING : 0
+UVM_ERROR : 0
+UVM_FATAL : 0
+** TEST PASSED **
+- /home/claude/oran_vip_suite/components/mmwave/tb/mmwave_tb_top.sv:61: Verilog $finish

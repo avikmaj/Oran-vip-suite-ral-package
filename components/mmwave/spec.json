@@ -1,0 +1,143 @@
+{
+  "slug": "mmwave",
+  "spec_ref": "3GPP TS38.211 FR2 mmWave n257/n258/n260/n261, mu=2/3/4",
+  "fields": [
+    {
+      "name": "version",
+      "w": 4,
+      "legal": {
+        "const": 1
+      }
+    },
+    {
+      "name": "band",
+      "w": 3,
+      "legal": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "name": "numerology",
+      "w": 4,
+      "legal": {
+        "range": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "name": "scs",
+      "w": 2,
+      "legal": {
+        "enum": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "name": "ssb_period",
+      "w": 4,
+      "legal": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "name": "beam_id",
+      "w": 16,
+      "legal": {
+        "range": [
+          0,
+          65535
+        ]
+      }
+    },
+    {
+      "name": "seq",
+      "w": 8,
+      "legal": {
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "rsvd",
+      "w": 23,
+      "legal": {
+        "const": 0
+      }
+    }
+  ],
+  "cross": [],
+  "cover": [
+    {
+      "id": "COV-002",
+      "field": "band",
+      "kind": "enum",
+      "args": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "COV-003",
+      "field": "numerology",
+      "kind": "enum",
+      "args": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "COV-004",
+      "field": "scs",
+      "kind": "enum",
+      "args": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "COV-005",
+      "field": "ssb_period",
+      "kind": "enum",
+      "args": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "COV-007",
+      "field": "seq",
+      "kind": "wrap",
+      "args": [
+        0,
+        255
+      ]
+    }
+  ]
+}

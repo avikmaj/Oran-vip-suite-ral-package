@@ -1,0 +1,41 @@
+{
+  "component": "beamforming",
+  "test": "rand78",
+  "seed": 78,
+  "lane": 1,
+  "sim": "verilator",
+  "sim_version": "Verilator 5.020",
+  "status": "PASS",
+  "uvm_error": 0,
+  "uvm_fatal": 0,
+  "transactions": 300,
+  "sim_exit": 0,
+  "functional_coverage": 100.0,
+  "functional_bins_covered": 14,
+  "functional_bins_total": 14,
+  "cov_bins": {
+    "COV-003.num_ports_1": 1,
+    "COV-003.num_ports_2": 1,
+    "COV-003.num_ports_4": 1,
+    "COV-003.num_ports_8": 1,
+    "COV-003.num_ports_16": 1,
+    "COV-003.num_ports_32": 1,
+    "COV-003.num_ports_64": 1,
+    "COV-005.section_ext_1": 1,
+    "COV-005.section_ext_4": 1,
+    "COV-005.section_ext_5": 1,
+    "COV-005.section_ext_6": 1,
+    "COV-007.seq_min": 1,
+    "COV-007.seq_max": 1,
+    "COV-007.seq_mid": 1
+  },
+  "assertions_exercised": {
+    "legality": 300,
+    "roundtrip": 300,
+    "pack": 300
+  },
+  "vacuous_assertions": [],
+  "spec_ref": "O-RAN.WG4.CUS Section Ext 1/4/5/6 beamforming",
+  "req_provenance": "DERIVED",
+  "timestamp": "2026-08-09T07:47:37.458961Z"
+}

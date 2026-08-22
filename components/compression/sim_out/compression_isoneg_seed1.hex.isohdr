@@ -1,0 +1,24 @@
+{
+ "isolable": [
+  "CONST_version",
+  "ENUM_method",
+  "CONST_iq_width",
+  "ENUM_comp_width",
+  "RANGE_block_size",
+  "CONST_rsvd"
+ ],
+ "non_isolable": [
+  [
+   "RANGE_exponent",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_seq",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "CROSS",
+   "unsat-dead-or-coupled"
+  ]
+ ]
+}

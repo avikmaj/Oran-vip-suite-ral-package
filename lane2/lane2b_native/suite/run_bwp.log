@@ -1,0 +1,43 @@
+MUVM_REG: 13 test types registered
+UVM_INFO /tmp/uvmtest/uvm/src/base/uvm_root.svh(476) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2020
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2:UVM:2020.3.1
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test bwp_test...
+COVGROUP,coverage=0.00
+SBSUMMARY,txns=100,legal_err=0,pack_err=0,rt_err=0
+SVA_EXERCISED,legality=100,roundtrip=100,pack=100
+UVM_INFO :  100
+UVM_WARNING : 0
+UVM_ERROR : 0
+UVM_FATAL : 0
+** TEST PASSED **
+UVM_INFO /tmp/uvmtest/uvm/src/base/uvm_report_server.svh(1009) @ 0: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    2
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[UVM/RELNOTES]     1
+
+- /tmp/uvmtest/uvm/src/base/uvm_root.svh:633: Verilog $finish
+- oran_uvm_tb_top.sv:35: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 0s; walltime 1.904 s; speed 0.000 s/s
+- Verilator: cpu 0.191 s on 1 threads; allocated 34 MB

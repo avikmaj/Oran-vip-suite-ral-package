@@ -1,0 +1,25 @@
+{
+  "test": "oran_ral_test",
+  "lane": "2b_native_uvm",
+  "simulator": "Verilator 5.050 (source-built) + Accellera UVM",
+  "seed": 1,
+  "sim_exit": 0,
+  "register_ops": 163,
+  "reg_errors": 0,
+  "uvm_error": 0,
+  "uvm_fatal": 0,
+  "registers": [
+    "ru_ctrl_reg@0x00 RW",
+    "ru_version_reg@0x04 RO",
+    "ru_numant_reg@0x08 RW",
+    "ru_comp_reg@0x0C RW",
+    "ru_bwp_reg@0x10 RW"
+  ],
+  "checks": [
+    "reset-value mirror",
+    "RO version read-back",
+    "20x RW randomize/update/read/mirror-compare",
+    "RO write-protect"
+  ],
+  "STATUS": "PASS"
+}

@@ -1,0 +1,75 @@
+{
+  "lane1": {
+    "tests": 1470,
+    "pass": 1470,
+    "sim": "Verilator 5.020/5.050"
+  },
+  "lane2a_uvm_subset": {
+    "runs": 39,
+    "pass": 39,
+    "sim": "Verilator 5.020/5.050"
+  },
+  "lane2b_native_uvm": {
+    "runs": 13,
+    "pass": 13,
+    "sim": "Verilator 5.050"
+  },
+  "combined_executed": 1536,
+  "combined_pass": 1536,
+  "combined_rate": 100.0,
+  "lane2b_ral_uvm_reg": {
+    "runs": 1,
+    "pass": 1,
+    "sim": "Verilator 5.050",
+    "test": "oran_ral_test",
+    "register_ops": 163
+  },
+  "isoneg_isolated_negative": {
+    "runs": 13,
+    "pass": 13,
+    "sim": "Verilator 5.020",
+    "desc": "one negative vector per reachable legality check, in isolation (RT-003 closure)"
+  },
+  "mutation_kill_rate": {
+    "shipped_regression": 91.8,
+    "with_isolated_stimulus": 100.0,
+    "mutants_valid": 73,
+    "killed_base": 67,
+    "killed_iso": 73,
+    "equivalent_dead": 9,
+    "open_survivors": 0,
+    "dead_exclusions_audited": "CLEAN",
+    "true_dead": 8,
+    "masked_equivalent": 1,
+    "misclassified": 0,
+    "note": "RT-003 mutation; equivalent-dead exclusions independently re-proven by gen/audit_dead.py (fresh Z3). An earlier run misclassified 2 enum checks as dead (gen_stim pinned minimal illegal value colliding with a cross) \u2014 fixed; denominator corrected 71->73."
+  },
+  "portability": {
+    "vcs": {
+      "suite": "13/13",
+      "ral": "PASS",
+      "status": "PASS",
+      "executed": true,
+      "sim": "VCS X-2025.06-SP1-1",
+      "uvm": "vendor built-in 1.2",
+      "host": "asccg01140706 (Intel farm)",
+      "date": "2026-08-22",
+      "evidence": "regression/vcs_report.json + regression/vcs_logs/",
+      "caveats": [
+        "RT-005 SVA still vacuous on VCS: ecpri_if cover properties 0 attempts/0 match (vif undriven)",
+        "RT-001 unchanged: all tests finish at Time 0 (zero-time transaction model, no clocked DUT)"
+      ]
+    },
+    "verilator5050": {
+      "status": "PASS",
+      "suite": "13/13",
+      "ral": "PASS"
+    },
+    "questa": {
+      "status": "NOT_RUN"
+    },
+    "xcelium": {
+      "status": "NOT_RUN"
+    }
+  }
+}

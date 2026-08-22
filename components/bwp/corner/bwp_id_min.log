@@ -1,0 +1,59 @@
+COVROW,bwp_id=0,numerology=1,bw_mhz=10,fr=0,active=1,seq=107
+COVROW,bwp_id=0,numerology=3,bw_mhz=5,fr=1,active=0,seq=0
+COVROW,bwp_id=0,numerology=0,bw_mhz=80,fr=1,active=1,seq=0
+COVROW,bwp_id=0,numerology=4,bw_mhz=20,fr=0,active=0,seq=51
+COVROW,bwp_id=0,numerology=0,bw_mhz=20,fr=1,active=0,seq=0
+COVROW,bwp_id=0,numerology=0,bw_mhz=60,fr=1,active=0,seq=191
+COVROW,bwp_id=0,numerology=1,bw_mhz=50,fr=0,active=1,seq=201
+COVROW,bwp_id=0,numerology=4,bw_mhz=50,fr=0,active=0,seq=180
+COVROW,bwp_id=0,numerology=4,bw_mhz=400,fr=0,active=0,seq=28
+COVROW,bwp_id=0,numerology=4,bw_mhz=80,fr=1,active=0,seq=169
+COVROW,bwp_id=0,numerology=1,bw_mhz=80,fr=0,active=1,seq=36
+COVROW,bwp_id=0,numerology=3,bw_mhz=25,fr=0,active=0,seq=35
+COVROW,bwp_id=0,numerology=3,bw_mhz=200,fr=1,active=1,seq=58
+COVROW,bwp_id=0,numerology=2,bw_mhz=20,fr=0,active=0,seq=0
+COVROW,bwp_id=0,numerology=1,bw_mhz=15,fr=0,active=1,seq=0
+COVROW,bwp_id=0,numerology=1,bw_mhz=5,fr=1,active=1,seq=152
+COVROW,bwp_id=0,numerology=0,bw_mhz=10,fr=1,active=1,seq=66
+COVROW,bwp_id=0,numerology=0,bw_mhz=100,fr=0,active=1,seq=221
+COVROW,bwp_id=0,numerology=0,bw_mhz=50,fr=1,active=0,seq=9
+COVROW,bwp_id=0,numerology=0,bw_mhz=40,fr=1,active=0,seq=0
+COVROW,bwp_id=0,numerology=4,bw_mhz=400,fr=0,active=0,seq=170
+COVROW,bwp_id=0,numerology=2,bw_mhz=10,fr=1,active=0,seq=208
+COVROW,bwp_id=0,numerology=1,bw_mhz=100,fr=1,active=0,seq=136
+COVROW,bwp_id=0,numerology=4,bw_mhz=10,fr=1,active=0,seq=6
+COVROW,bwp_id=0,numerology=0,bw_mhz=5,fr=1,active=1,seq=123
+COVROW,bwp_id=0,numerology=0,bw_mhz=5,fr=1,active=1,seq=106
+COVROW,bwp_id=0,numerology=0,bw_mhz=25,fr=1,active=1,seq=0
+COVROW,bwp_id=0,numerology=0,bw_mhz=25,fr=1,active=1,seq=106
+COVROW,bwp_id=0,numerology=2,bw_mhz=25,fr=1,active=0,seq=0
+COVROW,bwp_id=0,numerology=2,bw_mhz=25,fr=1,active=0,seq=47
+COVROW,bwp_id=0,numerology=1,bw_mhz=25,fr=0,active=0,seq=0
+COVROW,bwp_id=0,numerology=3,bw_mhz=15,fr=1,active=0,seq=0
+COVROW,bwp_id=0,numerology=2,bw_mhz=15,fr=1,active=0,seq=0
+COVROW,bwp_id=0,numerology=1,bw_mhz=80,fr=0,active=0,seq=0
+COVROW,bwp_id=0,numerology=4,bw_mhz=80,fr=0,active=0,seq=0
+COVROW,bwp_id=0,numerology=4,bw_mhz=400,fr=0,active=0,seq=141
+COVROW,bwp_id=0,numerology=1,bw_mhz=20,fr=0,active=0,seq=115
+COVROW,bwp_id=0,numerology=1,bw_mhz=400,fr=0,active=0,seq=0
+COVROW,bwp_id=0,numerology=1,bw_mhz=20,fr=0,active=1,seq=237
+COVROW,bwp_id=0,numerology=1,bw_mhz=100,fr=0,active=0,seq=26
+COVROW,bwp_id=0,numerology=2,bw_mhz=15,fr=0,active=0,seq=51
+COVROW,bwp_id=0,numerology=2,bw_mhz=15,fr=0,active=0,seq=0
+COVROW,bwp_id=0,numerology=3,bw_mhz=40,fr=0,active=0,seq=0
+COVROW,bwp_id=0,numerology=2,bw_mhz=400,fr=0,active=0,seq=0
+COVROW,bwp_id=0,numerology=1,bw_mhz=80,fr=1,active=0,seq=0
+COVROW,bwp_id=0,numerology=4,bw_mhz=80,fr=0,active=1,seq=0
+COVROW,bwp_id=0,numerology=0,bw_mhz=5,fr=0,active=1,seq=159
+COVROW,bwp_id=0,numerology=4,bw_mhz=10,fr=1,active=1,seq=252
+COVROW,bwp_id=0,numerology=3,bw_mhz=10,fr=0,active=1,seq=0
+COVROW,bwp_id=0,numerology=1,bw_mhz=200,fr=1,active=1,seq=207
+SBSUMMARY,txns=50,legal_err=0,pack_err=0,rt_err=0
+SVA_EXERCISED,legality=50,roundtrip=50,pack=50
+--- UVM Report Summary ---
+UVM_INFO :  50
+UVM_WARNING : 0
+UVM_ERROR : 0
+UVM_FATAL : 0
+** TEST PASSED **
+- /home/claude/oran_vip_suite/components/bwp/tb/bwp_tb_top.sv:61: Verilog $finish

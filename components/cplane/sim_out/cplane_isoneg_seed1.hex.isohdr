@@ -1,0 +1,26 @@
+{
+ "isolable": [
+  "CONST_version",
+  "RANGE_section_type",
+  "RANGE_section_ext",
+  "RANGE_num_symbol",
+  "ENUM_num_sections",
+  "RANGE_numerology",
+  "CONST_rsvd",
+  "CROSS"
+ ],
+ "non_isolable": [
+  [
+   "RANGE_start_symbol",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_beam_id",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_seq",
+   "unsat-dead-or-coupled"
+  ]
+ ]
+}

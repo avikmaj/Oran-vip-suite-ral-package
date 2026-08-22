@@ -1,0 +1,26 @@
+{
+ "isolable": [
+  "CONST_version",
+  "ENUM_netconf_op",
+  "ENUM_datastore",
+  "CONST_rsvd"
+ ],
+ "non_isolable": [
+  [
+   "RANGE_item_id",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_ant_cal",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_sw_slot",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_seq",
+   "unsat-dead-or-coupled"
+  ]
+ ]
+}

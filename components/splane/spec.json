@@ -1,0 +1,146 @@
+{
+  "slug": "splane",
+  "spec_ref": "O-RAN.WG4.CUS \u00a79 S-plane IEEE1588v2 PTP + SyncE",
+  "fields": [
+    {
+      "name": "version",
+      "w": 4,
+      "legal": {
+        "const": 1
+      }
+    },
+    {
+      "name": "ptp_msg",
+      "w": 4,
+      "legal": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "name": "clock_state",
+      "w": 2,
+      "legal": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "name": "synce_ql",
+      "w": 4,
+      "legal": {
+        "enum": [
+          0,
+          2,
+          4,
+          11,
+          15
+        ]
+      }
+    },
+    {
+      "name": "seq",
+      "w": 16,
+      "legal": {
+        "range": [
+          0,
+          65535
+        ]
+      }
+    },
+    {
+      "name": "timing_err",
+      "w": 12,
+      "legal": {
+        "range": [
+          0,
+          3000
+        ]
+      }
+    },
+    {
+      "name": "holdover",
+      "w": 1,
+      "legal": {
+        "range": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "name": "rsvd",
+      "w": 21,
+      "legal": {
+        "const": 0
+      }
+    }
+  ],
+  "cross": [],
+  "cover": [
+    {
+      "id": "COV-002",
+      "field": "ptp_msg",
+      "kind": "enum",
+      "args": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "COV-003",
+      "field": "clock_state",
+      "kind": "enum",
+      "args": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "COV-004",
+      "field": "synce_ql",
+      "kind": "enum",
+      "args": [
+        0,
+        2,
+        4,
+        11,
+        15
+      ]
+    },
+    {
+      "id": "COV-005",
+      "field": "seq",
+      "kind": "wrap",
+      "args": [
+        0,
+        65535
+      ]
+    },
+    {
+      "id": "COV-007",
+      "field": "holdover",
+      "kind": "bool",
+      "args": [
+        0,
+        1
+      ]
+    }
+  ]
+}

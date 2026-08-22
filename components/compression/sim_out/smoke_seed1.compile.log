@@ -1,0 +1,44 @@
+%Warning-UNSIGNED: /home/claude/oran_vip_suite/components/compression/rtl/compression_pkg.sv:29:274: Comparison is constant due to unsigned arithmetic
+                                                                                                   : ... note: In instance 'compression_tb_top'
+                   ... For warning description see https://verilator.org/warn/UNSIGNED?v=5.020
+                   ... Use "/* verilator lint_off UNSIGNED */" and lint_on around source to disable this message.
+%Warning-CMPCONST: /home/claude/oran_vip_suite/components/compression/rtl/compression_pkg.sv:29:293: Comparison is constant due to limited range
+                                                                                                   : ... note: In instance 'compression_tb_top'
+%Warning-CMPCONST: /home/claude/oran_vip_suite/components/compression/rtl/compression_pkg.sv:29:338: Comparison is constant due to limited range
+                                                                                                   : ... note: In instance 'compression_tb_top'
+%Warning-UNSIGNED: /home/claude/oran_vip_suite/components/compression/rtl/compression_pkg.sv:29:356: Comparison is constant due to unsigned arithmetic
+                                                                                                   : ... note: In instance 'compression_tb_top'
+%Warning-CMPCONST: /home/claude/oran_vip_suite/components/compression/rtl/compression_pkg.sv:29:370: Comparison is constant due to limited range
+                                                                                                   : ... note: In instance 'compression_tb_top'
+%Warning-UNSIGNED: /home/claude/oran_vip_suite/components/compression/rtl/compression_pkg.sv:36:21: Comparison is constant due to unsigned arithmetic
+                                                                                                  : ... note: In instance 'compression_tb_top'
+   36 |     if(!(h.exponent >= 0 && h.exponent <= 15)) return "RANGE_exponent";
+      |                     ^~
+%Warning-CMPCONST: /home/claude/oran_vip_suite/components/compression/rtl/compression_pkg.sv:36:40: Comparison is constant due to limited range
+                                                                                                  : ... note: In instance 'compression_tb_top'
+   36 |     if(!(h.exponent >= 0 && h.exponent <= 15)) return "RANGE_exponent";
+      |                                        ^~
+%Warning-CMPCONST: /home/claude/oran_vip_suite/components/compression/rtl/compression_pkg.sv:37:44: Comparison is constant due to limited range
+                                                                                                  : ... note: In instance 'compression_tb_top'
+   37 |     if(!(h.block_size >= 1 && h.block_size <= 255)) return "RANGE_block_size";
+      |                                            ^~
+%Warning-UNSIGNED: /home/claude/oran_vip_suite/components/compression/rtl/compression_pkg.sv:38:16: Comparison is constant due to unsigned arithmetic
+                                                                                                  : ... note: In instance 'compression_tb_top'
+   38 |     if(!(h.seq >= 0 && h.seq <= 255)) return "RANGE_seq";
+      |                ^~
+%Warning-CMPCONST: /home/claude/oran_vip_suite/components/compression/rtl/compression_pkg.sv:38:30: Comparison is constant due to limited range
+                                                                                                  : ... note: In instance 'compression_tb_top'
+   38 |     if(!(h.seq >= 0 && h.seq <= 255)) return "RANGE_seq";
+      |                              ^~
+make: Entering directory '/home/claude/oran_vip_suite/components/compression/sim_out/obj_smoke_1'
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable       -Os -c -o sim_main.o /home/claude/oran_vip_suite/components/compression/sim_main.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable       -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable       -c -o verilated_cov.o /usr/share/verilator/include/verilated_cov.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable       -c -o verilated_threads.o /usr/share/verilator/include/verilated_threads.cpp
+/usr/bin/python3 /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vcompression_tb_top.cpp Vcompression_tb_top___024root__DepSet_hff297cac__0.cpp Vcompression_tb_top___024root__DepSet_h2d034165__0.cpp Vcompression_tb_top___024root__Slow.cpp Vcompression_tb_top___024root__DepSet_hff297cac__0__Slow.cpp Vcompression_tb_top___024root__DepSet_h2d034165__0__Slow.cpp Vcompression_tb_top_compression_pkg__Slow.cpp Vcompression_tb_top_compression_pkg__DepSet_ha63af693__0__Slow.cpp Vcompression_tb_top_compression_pkg__DepSet_h75f1c756__0__Slow.cpp Vcompression_tb_top__Syms.cpp > Vcompression_tb_top__ALL.cpp
+echo "" > Vcompression_tb_top__ALL.verilator_deplist.tmp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable       -c -o Vcompression_tb_top__ALL.o Vcompression_tb_top__ALL.cpp
+Archive ar -rcs Vcompression_tb_top__ALL.a Vcompression_tb_top__ALL.o
+g++     sim_main.o verilated.o verilated_cov.o verilated_threads.o Vcompression_tb_top__ALL.a    -pthread -lpthread -latomic   -o simv
+rm Vcompression_tb_top__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/claude/oran_vip_suite/components/compression/sim_out/obj_smoke_1'

@@ -1,0 +1,41 @@
+{
+  "component": "compression",
+  "test": "rand76",
+  "seed": 76,
+  "lane": 1,
+  "sim": "verilator",
+  "sim_version": "Verilator 5.020",
+  "status": "PASS",
+  "uvm_error": 0,
+  "uvm_fatal": 0,
+  "transactions": 300,
+  "sim_exit": 0,
+  "functional_coverage": 100.0,
+  "functional_bins_covered": 14,
+  "functional_bins_total": 14,
+  "cov_bins": {
+    "COV-002.method_0": 1,
+    "COV-002.method_1": 1,
+    "COV-002.method_2": 1,
+    "COV-004.comp_width_9": 1,
+    "COV-004.comp_width_10": 1,
+    "COV-004.comp_width_11": 1,
+    "COV-004.comp_width_12": 1,
+    "COV-004.comp_width_13": 1,
+    "COV-004.comp_width_14": 1,
+    "COV-004.comp_width_15": 1,
+    "COV-004.comp_width_16": 1,
+    "COV-007.seq_min": 1,
+    "COV-007.seq_max": 1,
+    "COV-007.seq_mid": 1
+  },
+  "assertions_exercised": {
+    "legality": 300,
+    "roundtrip": 300,
+    "pack": 300
+  },
+  "vacuous_assertions": [],
+  "spec_ref": "O-RAN.WG4.CUS Annex A IQ compression BFP/mu-law/static",
+  "req_provenance": "DERIVED",
+  "timestamp": "2026-08-09T07:48:12.372914Z"
+}

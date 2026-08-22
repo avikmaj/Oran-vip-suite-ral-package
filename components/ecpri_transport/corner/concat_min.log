@@ -1,0 +1,59 @@
+COVROW,concat=0,msg_type=1,payload_size=17,seq_id=107,e_bit=0
+COVROW,concat=0,msg_type=7,payload_size=829,seq_id=15,e_bit=0
+COVROW,concat=0,msg_type=0,payload_size=790,seq_id=176,e_bit=0
+COVROW,concat=0,msg_type=1,payload_size=1024,seq_id=0,e_bit=1
+COVROW,concat=0,msg_type=6,payload_size=43,seq_id=88,e_bit=1
+COVROW,concat=0,msg_type=5,payload_size=38,seq_id=201,e_bit=0
+COVROW,concat=0,msg_type=6,payload_size=38,seq_id=137,e_bit=0
+COVROW,concat=0,msg_type=6,payload_size=38,seq_id=211,e_bit=1
+COVROW,concat=0,msg_type=7,payload_size=831,seq_id=0,e_bit=1
+COVROW,concat=0,msg_type=7,payload_size=781,seq_id=94,e_bit=0
+COVROW,concat=0,msg_type=4,payload_size=309,seq_id=58,e_bit=1
+COVROW,concat=0,msg_type=4,payload_size=309,seq_id=203,e_bit=0
+COVROW,concat=0,msg_type=7,payload_size=672,seq_id=218,e_bit=1
+COVROW,concat=0,msg_type=7,payload_size=672,seq_id=213,e_bit=0
+COVROW,concat=0,msg_type=7,payload_size=672,seq_id=177,e_bit=1
+COVROW,concat=0,msg_type=4,payload_size=25,seq_id=9,e_bit=0
+COVROW,concat=0,msg_type=4,payload_size=865,seq_id=0,e_bit=0
+COVROW,concat=0,msg_type=4,payload_size=226,seq_id=130,e_bit=1
+COVROW,concat=0,msg_type=2,payload_size=796,seq_id=0,e_bit=0
+COVROW,concat=0,msg_type=1,payload_size=237,seq_id=151,e_bit=0
+COVROW,concat=0,msg_type=4,payload_size=694,seq_id=20,e_bit=1
+COVROW,concat=0,msg_type=2,payload_size=113,seq_id=150,e_bit=1
+COVROW,concat=0,msg_type=0,payload_size=113,seq_id=160,e_bit=0
+COVROW,concat=0,msg_type=7,payload_size=273,seq_id=126,e_bit=1
+COVROW,concat=0,msg_type=3,payload_size=322,seq_id=155,e_bit=0
+COVROW,concat=0,msg_type=3,payload_size=282,seq_id=11,e_bit=0
+COVROW,concat=0,msg_type=1,payload_size=822,seq_id=0,e_bit=1
+COVROW,concat=0,msg_type=2,payload_size=747,seq_id=105,e_bit=1
+COVROW,concat=0,msg_type=2,payload_size=747,seq_id=0,e_bit=1
+COVROW,concat=0,msg_type=2,payload_size=963,seq_id=181,e_bit=0
+COVROW,concat=0,msg_type=2,payload_size=247,seq_id=0,e_bit=0
+COVROW,concat=0,msg_type=6,payload_size=247,seq_id=112,e_bit=0
+COVROW,concat=0,msg_type=4,payload_size=247,seq_id=237,e_bit=0
+COVROW,concat=0,msg_type=6,payload_size=591,seq_id=201,e_bit=1
+COVROW,concat=0,msg_type=6,payload_size=651,seq_id=0,e_bit=0
+COVROW,concat=0,msg_type=6,payload_size=939,seq_id=0,e_bit=0
+COVROW,concat=0,msg_type=4,payload_size=775,seq_id=10,e_bit=0
+COVROW,concat=0,msg_type=3,payload_size=775,seq_id=86,e_bit=1
+COVROW,concat=0,msg_type=3,payload_size=775,seq_id=6,e_bit=0
+COVROW,concat=0,msg_type=6,payload_size=775,seq_id=226,e_bit=1
+COVROW,concat=0,msg_type=1,payload_size=394,seq_id=0,e_bit=1
+COVROW,concat=0,msg_type=2,payload_size=692,seq_id=199,e_bit=1
+COVROW,concat=0,msg_type=4,payload_size=424,seq_id=0,e_bit=0
+COVROW,concat=0,msg_type=4,payload_size=565,seq_id=248,e_bit=0
+COVROW,concat=0,msg_type=1,payload_size=680,seq_id=82,e_bit=1
+COVROW,concat=0,msg_type=3,payload_size=349,seq_id=188,e_bit=0
+COVROW,concat=0,msg_type=6,payload_size=184,seq_id=168,e_bit=0
+COVROW,concat=0,msg_type=6,payload_size=184,seq_id=97,e_bit=0
+COVROW,concat=0,msg_type=4,payload_size=174,seq_id=225,e_bit=1
+COVROW,concat=0,msg_type=1,payload_size=414,seq_id=23,e_bit=0
+SBSUMMARY,txns=50,legal_err=0,pack_err=0,rt_err=0
+SVA_EXERCISED,legality=50,roundtrip=50,pack=50
+--- UVM Report Summary ---
+UVM_INFO :  50
+UVM_WARNING : 0
+UVM_ERROR : 0
+UVM_FATAL : 0
+** TEST PASSED **
+- /home/claude/oran_vip_suite/components/ecpri_transport/tb/ecpri_transport_tb_top.sv:63: Verilog $finish

@@ -1,0 +1,419 @@
+{
+  "date": "2026-08-09T13:10:18.250623Z",
+  "lane": 1,
+  "sim": "Verilator 5.020",
+  "components": {
+    "ecpri_transport": {
+      "desc": "eCPRI Transport (both)",
+      "tests": 40,
+      "passed": 40,
+      "rate": 100.0,
+      "by_class": {
+        "corner": {
+          "tests": 14,
+          "pass": 14
+        },
+        "negative": {
+          "tests": 3,
+          "pass": 3
+        },
+        "random": {
+          "tests": 20,
+          "pass": 20
+        },
+        "smoke": {
+          "tests": 3,
+          "pass": 3
+        }
+      },
+      "func_cov": 100.0,
+      "func_holes": 0,
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "toggle": 54.69,
+      "waived_branches": 6,
+      "gate8_code": "PASS_WITH_WAIVERS"
+    },
+    "cpri_eth": {
+      "desc": "CPRI-over-Ethernet (4G)",
+      "tests": 122,
+      "passed": 122,
+      "rate": 100.0,
+      "by_class": {
+        "corner": {
+          "tests": 16,
+          "pass": 16
+        },
+        "negative": {
+          "tests": 3,
+          "pass": 3
+        },
+        "random": {
+          "tests": 100,
+          "pass": 100
+        },
+        "smoke": {
+          "tests": 3,
+          "pass": 3
+        }
+      },
+      "func_cov": 100.0,
+      "func_holes": 0,
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "toggle": 43.75,
+      "waived_branches": 6,
+      "gate8_code": "PASS_WITH_WAIVERS"
+    },
+    "uplane": {
+      "desc": "U-Plane Split 7.2x (5G)",
+      "tests": 123,
+      "passed": 123,
+      "rate": 100.0,
+      "by_class": {
+        "corner": {
+          "tests": 17,
+          "pass": 17
+        },
+        "negative": {
+          "tests": 3,
+          "pass": 3
+        },
+        "random": {
+          "tests": 100,
+          "pass": 100
+        },
+        "smoke": {
+          "tests": 3,
+          "pass": 3
+        }
+      },
+      "func_cov": 100.0,
+      "func_holes": 0,
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "toggle": 60.94,
+      "waived_branches": 6,
+      "gate8_code": "PASS_WITH_WAIVERS"
+    },
+    "cplane": {
+      "desc": "C-Plane scheduling (5G)",
+      "tests": 123,
+      "passed": 123,
+      "rate": 100.0,
+      "by_class": {
+        "corner": {
+          "tests": 17,
+          "pass": 17
+        },
+        "negative": {
+          "tests": 3,
+          "pass": 3
+        },
+        "random": {
+          "tests": 100,
+          "pass": 100
+        },
+        "smoke": {
+          "tests": 3,
+          "pass": 3
+        }
+      },
+      "func_cov": 100.0,
+      "func_holes": 0,
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "toggle": 57.81,
+      "waived_branches": 6,
+      "gate8_code": "PASS_WITH_WAIVERS"
+    },
+    "splane": {
+      "desc": "S-Plane PTP/SyncE (both)",
+      "tests": 119,
+      "passed": 119,
+      "rate": 100.0,
+      "by_class": {
+        "corner": {
+          "tests": 12,
+          "pass": 12
+        },
+        "directed": {
+          "tests": 1,
+          "pass": 1
+        },
+        "negative": {
+          "tests": 3,
+          "pass": 3
+        },
+        "random": {
+          "tests": 100,
+          "pass": 100
+        },
+        "smoke": {
+          "tests": 3,
+          "pass": 3
+        }
+      },
+      "func_cov": 100.0,
+      "func_holes": 0,
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "toggle": 57.81,
+      "waived_branches": 6,
+      "gate8_code": "PASS_WITH_WAIVERS"
+    },
+    "mplane": {
+      "desc": "M-Plane NETCONF/YANG (both)",
+      "tests": 118,
+      "passed": 118,
+      "rate": 100.0,
+      "by_class": {
+        "corner": {
+          "tests": 12,
+          "pass": 12
+        },
+        "negative": {
+          "tests": 3,
+          "pass": 3
+        },
+        "random": {
+          "tests": 100,
+          "pass": 100
+        },
+        "smoke": {
+          "tests": 3,
+          "pass": 3
+        }
+      },
+      "func_cov": 100.0,
+      "func_holes": 0,
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "toggle": 50.0,
+      "waived_branches": 6,
+      "gate8_code": "PASS_WITH_WAIVERS"
+    },
+    "beamforming": {
+      "desc": "Beamforming 64T64R (5G)",
+      "tests": 119,
+      "passed": 119,
+      "rate": 100.0,
+      "by_class": {
+        "corner": {
+          "tests": 13,
+          "pass": 13
+        },
+        "negative": {
+          "tests": 3,
+          "pass": 3
+        },
+        "random": {
+          "tests": 100,
+          "pass": 100
+        },
+        "smoke": {
+          "tests": 3,
+          "pass": 3
+        }
+      },
+      "func_cov": 100.0,
+      "func_holes": 0,
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "toggle": 45.31,
+      "waived_branches": 6,
+      "gate8_code": "PASS_WITH_WAIVERS"
+    },
+    "compression": {
+      "desc": "IQ Compression (5G)",
+      "tests": 116,
+      "passed": 116,
+      "rate": 100.0,
+      "by_class": {
+        "corner": {
+          "tests": 10,
+          "pass": 10
+        },
+        "negative": {
+          "tests": 3,
+          "pass": 3
+        },
+        "random": {
+          "tests": 100,
+          "pass": 100
+        },
+        "smoke": {
+          "tests": 3,
+          "pass": 3
+        }
+      },
+      "func_cov": 100.0,
+      "func_holes": 0,
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "toggle": 35.94,
+      "waived_branches": 6,
+      "gate8_code": "PASS_WITH_WAIVERS"
+    },
+    "prach": {
+      "desc": "PRACH handler (5G)",
+      "tests": 118,
+      "passed": 118,
+      "rate": 100.0,
+      "by_class": {
+        "corner": {
+          "tests": 12,
+          "pass": 12
+        },
+        "negative": {
+          "tests": 3,
+          "pass": 3
+        },
+        "random": {
+          "tests": 100,
+          "pass": 100
+        },
+        "smoke": {
+          "tests": 3,
+          "pass": 3
+        }
+      },
+      "func_cov": 100.0,
+      "func_holes": 0,
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "toggle": 46.88,
+      "waived_branches": 6,
+      "gate8_code": "PASS_WITH_WAIVERS"
+    },
+    "mimo_massive": {
+      "desc": "Massive MIMO 64T64R (5G)",
+      "tests": 120,
+      "passed": 120,
+      "rate": 100.0,
+      "by_class": {
+        "corner": {
+          "tests": 14,
+          "pass": 14
+        },
+        "negative": {
+          "tests": 3,
+          "pass": 3
+        },
+        "random": {
+          "tests": 100,
+          "pass": 100
+        },
+        "smoke": {
+          "tests": 3,
+          "pass": 3
+        }
+      },
+      "func_cov": 100.0,
+      "func_holes": 0,
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "toggle": 32.81,
+      "waived_branches": 6,
+      "gate8_code": "PASS_WITH_WAIVERS"
+    },
+    "bwp": {
+      "desc": "BWP manager (5G)",
+      "tests": 118,
+      "passed": 118,
+      "rate": 100.0,
+      "by_class": {
+        "corner": {
+          "tests": 12,
+          "pass": 12
+        },
+        "negative": {
+          "tests": 3,
+          "pass": 3
+        },
+        "random": {
+          "tests": 100,
+          "pass": 100
+        },
+        "smoke": {
+          "tests": 3,
+          "pass": 3
+        }
+      },
+      "func_cov": 100.0,
+      "func_holes": 0,
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "toggle": 35.94,
+      "waived_branches": 6,
+      "gate8_code": "PASS_WITH_WAIVERS"
+    },
+    "mmwave": {
+      "desc": "mmWave FR2 (5G)",
+      "tests": 118,
+      "passed": 118,
+      "rate": 100.0,
+      "by_class": {
+        "corner": {
+          "tests": 12,
+          "pass": 12
+        },
+        "negative": {
+          "tests": 3,
+          "pass": 3
+        },
+        "random": {
+          "tests": 100,
+          "pass": 100
+        },
+        "smoke": {
+          "tests": 3,
+          "pass": 3
+        }
+      },
+      "func_cov": 100.0,
+      "func_holes": 0,
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "toggle": 50.0,
+      "waived_branches": 6,
+      "gate8_code": "PASS_WITH_WAIVERS"
+    },
+    "laa": {
+      "desc": "LAA Sect-Type-5 (5G)",
+      "tests": 116,
+      "passed": 116,
+      "rate": 100.0,
+      "by_class": {
+        "corner": {
+          "tests": 10,
+          "pass": 10
+        },
+        "negative": {
+          "tests": 3,
+          "pass": 3
+        },
+        "random": {
+          "tests": 100,
+          "pass": 100
+        },
+        "smoke": {
+          "tests": 3,
+          "pass": 3
+        }
+      },
+      "func_cov": 100.0,
+      "func_holes": 0,
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "toggle": 25.0,
+      "waived_branches": 6,
+      "gate8_code": "PASS_WITH_WAIVERS"
+    }
+  },
+  "suite": {
+    "tests": 1470,
+    "passed": 1470,
+    "rate": 100.0
+  }
+}

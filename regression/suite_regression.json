@@ -1,0 +1,298 @@
+{
+  "date": "2026-08-09T07:51:42.692263Z",
+  "lane": 1,
+  "sim": "Verilator 5.020",
+  "components": {
+    "ecpri_transport": {
+      "GATE0": "DERIVED",
+      "GATE1": "APPROVED",
+      "GATE2": "PASS",
+      "GATE3": "PASS",
+      "GATE4": "PASS",
+      "GATE5": "PASS",
+      "GATE5_seeds": 20,
+      "GATE6": "PASS",
+      "GATE7": "PASS",
+      "GATE8_func": "PASS",
+      "merged_fcov": 100.0,
+      "GATE8_code": "PASS_WITH_WAIVERS",
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "waived_branches": 6,
+      "GATE9": {
+        "tests": 26,
+        "passed": 26,
+        "rate": 100.0
+      }
+    },
+    "cpri_eth": {
+      "GATE0": "DERIVED",
+      "GATE1": "APPROVED",
+      "GATE2": "PASS",
+      "GATE3": "PASS",
+      "GATE4": "PASS",
+      "GATE5": "PASS",
+      "GATE5_seeds": 100,
+      "GATE6": "PASS",
+      "GATE7": "PASS",
+      "GATE8_func": "PASS",
+      "merged_fcov": 100.0,
+      "GATE8_code": "PASS_WITH_WAIVERS",
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "waived_branches": 6,
+      "GATE9": {
+        "tests": 106,
+        "passed": 106,
+        "rate": 100.0
+      }
+    },
+    "uplane": {
+      "GATE0": "DERIVED",
+      "GATE1": "APPROVED",
+      "GATE2": "PASS",
+      "GATE3": "PASS",
+      "GATE4": "PASS",
+      "GATE5": "PASS",
+      "GATE5_seeds": 100,
+      "GATE6": "PASS",
+      "GATE7": "PASS",
+      "GATE8_func": "PASS",
+      "merged_fcov": 100.0,
+      "GATE8_code": "PASS_WITH_WAIVERS",
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "waived_branches": 6,
+      "GATE9": {
+        "tests": 106,
+        "passed": 106,
+        "rate": 100.0
+      }
+    },
+    "cplane": {
+      "GATE0": "DERIVED",
+      "GATE1": "APPROVED",
+      "GATE2": "PASS",
+      "GATE3": "PASS",
+      "GATE4": "PASS",
+      "GATE5": "PASS",
+      "GATE5_seeds": 100,
+      "GATE6": "PASS",
+      "GATE7": "PASS",
+      "GATE8_func": "PASS",
+      "merged_fcov": 100.0,
+      "GATE8_code": "PASS_WITH_WAIVERS",
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "waived_branches": 6,
+      "GATE9": {
+        "tests": 106,
+        "passed": 106,
+        "rate": 100.0
+      }
+    },
+    "splane": {
+      "GATE0": "DERIVED",
+      "GATE1": "APPROVED",
+      "GATE2": "PASS",
+      "GATE3": "PASS",
+      "GATE4": "PASS",
+      "GATE5": "PASS",
+      "GATE5_seeds": 100,
+      "GATE6": "PASS",
+      "GATE7": "PASS",
+      "GATE8_func": "PASS",
+      "merged_fcov": 100.0,
+      "GATE8_code": "PASS_WITH_WAIVERS",
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "waived_branches": 6,
+      "GATE9": {
+        "tests": 107,
+        "passed": 107,
+        "rate": 100.0
+      }
+    },
+    "mplane": {
+      "GATE0": "DERIVED",
+      "GATE1": "APPROVED",
+      "GATE2": "PASS",
+      "GATE3": "PASS",
+      "GATE4": "PASS",
+      "GATE5": "PASS",
+      "GATE5_seeds": 100,
+      "GATE6": "PASS",
+      "GATE7": "PASS",
+      "GATE8_func": "PASS",
+      "merged_fcov": 100.0,
+      "GATE8_code": "PASS_WITH_WAIVERS",
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "waived_branches": 6,
+      "GATE9": {
+        "tests": 106,
+        "passed": 106,
+        "rate": 100.0
+      }
+    },
+    "beamforming": {
+      "GATE0": "DERIVED",
+      "GATE1": "APPROVED",
+      "GATE2": "PASS",
+      "GATE3": "PASS",
+      "GATE4": "PASS",
+      "GATE5": "PASS",
+      "GATE5_seeds": 100,
+      "GATE6": "PASS",
+      "GATE7": "PASS",
+      "GATE8_func": "PASS",
+      "merged_fcov": 100.0,
+      "GATE8_code": "PASS_WITH_WAIVERS",
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "waived_branches": 6,
+      "GATE9": {
+        "tests": 106,
+        "passed": 106,
+        "rate": 100.0
+      }
+    },
+    "compression": {
+      "GATE0": "DERIVED",
+      "GATE1": "APPROVED",
+      "GATE2": "PASS",
+      "GATE3": "PASS",
+      "GATE4": "PASS",
+      "GATE5": "PASS",
+      "GATE5_seeds": 100,
+      "GATE6": "PASS",
+      "GATE7": "PASS",
+      "GATE8_func": "PASS",
+      "merged_fcov": 100.0,
+      "GATE8_code": "PASS_WITH_WAIVERS",
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "waived_branches": 6,
+      "GATE9": {
+        "tests": 106,
+        "passed": 106,
+        "rate": 100.0
+      }
+    },
+    "prach": {
+      "GATE0": "DERIVED",
+      "GATE1": "APPROVED",
+      "GATE2": "PASS",
+      "GATE3": "PASS",
+      "GATE4": "PASS",
+      "GATE5": "PASS",
+      "GATE5_seeds": 100,
+      "GATE6": "PASS",
+      "GATE7": "PASS",
+      "GATE8_func": "PASS",
+      "merged_fcov": 100.0,
+      "GATE8_code": "PASS_WITH_WAIVERS",
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "waived_branches": 6,
+      "GATE9": {
+        "tests": 106,
+        "passed": 106,
+        "rate": 100.0
+      }
+    },
+    "mimo_massive": {
+      "GATE0": "DERIVED",
+      "GATE1": "APPROVED",
+      "GATE2": "PASS",
+      "GATE3": "PASS",
+      "GATE4": "PASS",
+      "GATE5": "PASS",
+      "GATE5_seeds": 100,
+      "GATE6": "PASS",
+      "GATE7": "PASS",
+      "GATE8_func": "PASS",
+      "merged_fcov": 100.0,
+      "GATE8_code": "PASS_WITH_WAIVERS",
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "waived_branches": 6,
+      "GATE9": {
+        "tests": 106,
+        "passed": 106,
+        "rate": 100.0
+      }
+    },
+    "bwp": {
+      "GATE0": "DERIVED",
+      "GATE1": "APPROVED",
+      "GATE2": "PASS",
+      "GATE3": "PASS",
+      "GATE4": "PASS",
+      "GATE5": "PASS",
+      "GATE5_seeds": 100,
+      "GATE6": "PASS",
+      "GATE7": "PASS",
+      "GATE8_func": "PASS",
+      "merged_fcov": 100.0,
+      "GATE8_code": "PASS_WITH_WAIVERS",
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "waived_branches": 6,
+      "GATE9": {
+        "tests": 106,
+        "passed": 106,
+        "rate": 100.0
+      }
+    },
+    "mmwave": {
+      "GATE0": "DERIVED",
+      "GATE1": "APPROVED",
+      "GATE2": "PASS",
+      "GATE3": "PASS",
+      "GATE4": "PASS",
+      "GATE5": "PASS",
+      "GATE5_seeds": 100,
+      "GATE6": "PASS",
+      "GATE7": "PASS",
+      "GATE8_func": "PASS",
+      "merged_fcov": 100.0,
+      "GATE8_code": "PASS_WITH_WAIVERS",
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "waived_branches": 6,
+      "GATE9": {
+        "tests": 106,
+        "passed": 106,
+        "rate": 100.0
+      }
+    },
+    "laa": {
+      "GATE0": "DERIVED",
+      "GATE1": "APPROVED",
+      "GATE2": "PASS",
+      "GATE3": "PASS",
+      "GATE4": "PASS",
+      "GATE5": "PASS",
+      "GATE5_seeds": 100,
+      "GATE6": "PASS",
+      "GATE7": "PASS",
+      "GATE8_func": "PASS",
+      "merged_fcov": 100.0,
+      "GATE8_code": "PASS_WITH_WAIVERS",
+      "code_stmt": 100.0,
+      "code_branch_eff": 100.0,
+      "waived_branches": 6,
+      "GATE9": {
+        "tests": 106,
+        "passed": 106,
+        "rate": 100.0
+      }
+    }
+  },
+  "GATE9_suite": {
+    "tests": 1299,
+    "passed": 1299,
+    "rate": 100.0
+  }
+}

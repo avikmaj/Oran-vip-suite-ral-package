@@ -1,0 +1,59 @@
+COVROW,format=2,numerology=4,fr=1,seq=48
+COVROW,format=6,numerology=4,fr=1,seq=15
+COVROW,format=8,numerology=4,fr=0,seq=119
+COVROW,format=8,numerology=4,fr=0,seq=0
+COVROW,format=8,numerology=4,fr=0,seq=17
+COVROW,format=6,numerology=4,fr=1,seq=201
+COVROW,format=0,numerology=4,fr=1,seq=118
+COVROW,format=0,numerology=4,fr=1,seq=66
+COVROW,format=8,numerology=4,fr=0,seq=182
+COVROW,format=0,numerology=4,fr=1,seq=0
+COVROW,format=0,numerology=4,fr=0,seq=143
+COVROW,format=0,numerology=4,fr=1,seq=150
+COVROW,format=5,numerology=4,fr=0,seq=0
+COVROW,format=5,numerology=4,fr=0,seq=82
+COVROW,format=8,numerology=4,fr=0,seq=164
+COVROW,format=6,numerology=4,fr=0,seq=152
+COVROW,format=6,numerology=4,fr=0,seq=235
+COVROW,format=9,numerology=4,fr=0,seq=252
+COVROW,format=6,numerology=4,fr=0,seq=0
+COVROW,format=6,numerology=4,fr=1,seq=0
+COVROW,format=8,numerology=4,fr=0,seq=170
+COVROW,format=4,numerology=4,fr=0,seq=208
+COVROW,format=4,numerology=4,fr=0,seq=136
+COVROW,format=4,numerology=4,fr=0,seq=7
+COVROW,format=4,numerology=4,fr=0,seq=123
+COVROW,format=1,numerology=4,fr=1,seq=20
+COVROW,format=4,numerology=4,fr=1,seq=233
+COVROW,format=4,numerology=4,fr=1,seq=126
+COVROW,format=4,numerology=4,fr=0,seq=21
+COVROW,format=4,numerology=4,fr=1,seq=0
+COVROW,format=6,numerology=4,fr=0,seq=183
+COVROW,format=2,numerology=4,fr=0,seq=163
+COVROW,format=2,numerology=4,fr=1,seq=105
+COVROW,format=6,numerology=4,fr=0,seq=128
+COVROW,format=8,numerology=4,fr=1,seq=9
+COVROW,format=5,numerology=4,fr=0,seq=45
+COVROW,format=0,numerology=4,fr=0,seq=115
+COVROW,format=5,numerology=4,fr=0,seq=104
+COVROW,format=5,numerology=4,fr=0,seq=193
+COVROW,format=4,numerology=4,fr=0,seq=84
+COVROW,format=0,numerology=4,fr=1,seq=0
+COVROW,format=0,numerology=4,fr=0,seq=221
+COVROW,format=5,numerology=4,fr=0,seq=151
+COVROW,format=6,numerology=4,fr=0,seq=105
+COVROW,format=2,numerology=4,fr=1,seq=86
+COVROW,format=7,numerology=4,fr=0,seq=12
+COVROW,format=0,numerology=4,fr=0,seq=165
+COVROW,format=7,numerology=4,fr=1,seq=193
+COVROW,format=8,numerology=4,fr=0,seq=156
+COVROW,format=7,numerology=4,fr=0,seq=0
+SBSUMMARY,txns=50,legal_err=0,pack_err=0,rt_err=0
+SVA_EXERCISED,legality=50,roundtrip=50,pack=50
+--- UVM Report Summary ---
+UVM_INFO :  50
+UVM_WARNING : 0
+UVM_ERROR : 0
+UVM_FATAL : 0
+** TEST PASSED **
+- /home/claude/oran_vip_suite/components/prach/tb/prach_tb_top.sv:63: Verilog $finish

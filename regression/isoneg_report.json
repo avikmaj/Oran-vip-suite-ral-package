@@ -1,0 +1,232 @@
+{
+  "components": {
+    "ecpri_transport": {
+      "status": "EXPECTED_FAILURE_DETECTED",
+      "checks_isolated": 4,
+      "reachable_checks": [
+        "CONST_version",
+        "CONST_rsvd",
+        "RANGE_msg_type",
+        "RANGE_payload_size"
+      ],
+      "dead_checks": [
+        "RANGE_concat",
+        "RANGE_pc_id",
+        "RANGE_seq_id",
+        "RANGE_e_bit",
+        "RANGE_sub_seq"
+      ]
+    },
+    "cpri_eth": {
+      "status": "EXPECTED_FAILURE_DETECTED",
+      "checks_isolated": 5,
+      "reachable_checks": [
+        "CONST_version",
+        "ENUM_bw_profile",
+        "ENUM_synce_ql",
+        "RANGE_subframe",
+        "CONST_rsvd"
+      ],
+      "dead_checks": [
+        "RANGE_direction",
+        "RANGE_iq_rate_id",
+        "RANGE_frame_id",
+        "RANGE_cm_flag",
+        "RANGE_seq"
+      ]
+    },
+    "uplane": {
+      "status": "EXPECTED_FAILURE_DETECTED",
+      "checks_isolated": 9,
+      "reachable_checks": [
+        "CONST_version",
+        "ENUM_section_type",
+        "RANGE_numerology",
+        "RANGE_start_prb",
+        "RANGE_num_prb",
+        "RANGE_symbol_id",
+        "RANGE_comp_bits",
+        "CONST_rsvd",
+        "CROSS"
+      ],
+      "dead_checks": [
+        "ENUM_comp_type",
+        "RANGE_seq"
+      ]
+    },
+    "cplane": {
+      "status": "EXPECTED_FAILURE_DETECTED",
+      "checks_isolated": 8,
+      "reachable_checks": [
+        "CONST_version",
+        "RANGE_section_type",
+        "RANGE_section_ext",
+        "RANGE_num_symbol",
+        "ENUM_num_sections",
+        "RANGE_numerology",
+        "CONST_rsvd",
+        "CROSS"
+      ],
+      "dead_checks": [
+        "RANGE_start_symbol",
+        "RANGE_beam_id",
+        "RANGE_seq"
+      ]
+    },
+    "splane": {
+      "status": "EXPECTED_FAILURE_DETECTED",
+      "checks_isolated": 5,
+      "reachable_checks": [
+        "CONST_version",
+        "ENUM_ptp_msg",
+        "ENUM_synce_ql",
+        "RANGE_timing_err",
+        "CONST_rsvd"
+      ],
+      "dead_checks": [
+        "ENUM_clock_state",
+        "RANGE_seq",
+        "RANGE_holdover"
+      ]
+    },
+    "mplane": {
+      "status": "EXPECTED_FAILURE_DETECTED",
+      "checks_isolated": 4,
+      "reachable_checks": [
+        "CONST_version",
+        "ENUM_netconf_op",
+        "ENUM_datastore",
+        "CONST_rsvd"
+      ],
+      "dead_checks": [
+        "RANGE_item_id",
+        "RANGE_ant_cal",
+        "RANGE_sw_slot",
+        "RANGE_seq"
+      ]
+    },
+    "beamforming": {
+      "status": "EXPECTED_FAILURE_DETECTED",
+      "checks_isolated": 6,
+      "reachable_checks": [
+        "CONST_version",
+        "ENUM_num_ports",
+        "RANGE_num_layers",
+        "ENUM_section_ext",
+        "CONST_rsvd",
+        "CROSS"
+      ],
+      "dead_checks": [
+        "RANGE_beam_id",
+        "RANGE_codebook_idx",
+        "RANGE_seq"
+      ]
+    },
+    "compression": {
+      "status": "EXPECTED_FAILURE_DETECTED",
+      "checks_isolated": 6,
+      "reachable_checks": [
+        "CONST_version",
+        "ENUM_method",
+        "CONST_iq_width",
+        "ENUM_comp_width",
+        "RANGE_block_size",
+        "CONST_rsvd"
+      ],
+      "dead_checks": [
+        "RANGE_exponent",
+        "RANGE_seq",
+        "CROSS"
+      ]
+    },
+    "prach": {
+      "status": "EXPECTED_FAILURE_DETECTED",
+      "checks_isolated": 5,
+      "reachable_checks": [
+        "CONST_version",
+        "CONST_section_type",
+        "ENUM_format",
+        "RANGE_numerology",
+        "CONST_rsvd"
+      ],
+      "dead_checks": [
+        "RANGE_fr",
+        "RANGE_zc_root",
+        "RANGE_occasion",
+        "RANGE_seq"
+      ]
+    },
+    "mimo_massive": {
+      "status": "EXPECTED_FAILURE_DETECTED",
+      "checks_isolated": 8,
+      "reachable_checks": [
+        "CONST_version",
+        "ENUM_ant_cfg",
+        "RANGE_num_layers",
+        "RANGE_tdd_cfg",
+        "RANGE_rank",
+        "CONST_rsvd",
+        "CROSS",
+        "CROSS"
+      ],
+      "dead_checks": [
+        "RANGE_precoder_idx",
+        "RANGE_seq"
+      ]
+    },
+    "bwp": {
+      "status": "EXPECTED_FAILURE_DETECTED",
+      "checks_isolated": 4,
+      "reachable_checks": [
+        "CONST_version",
+        "RANGE_numerology",
+        "ENUM_bw_mhz",
+        "CONST_rsvd"
+      ],
+      "dead_checks": [
+        "RANGE_bwp_id",
+        "RANGE_fr",
+        "RANGE_active",
+        "RANGE_seq"
+      ]
+    },
+    "mmwave": {
+      "status": "EXPECTED_FAILURE_DETECTED",
+      "checks_isolated": 6,
+      "reachable_checks": [
+        "CONST_version",
+        "ENUM_band",
+        "RANGE_numerology",
+        "ENUM_scs",
+        "ENUM_ssb_period",
+        "CONST_rsvd"
+      ],
+      "dead_checks": [
+        "RANGE_beam_id",
+        "RANGE_seq"
+      ]
+    },
+    "laa": {
+      "status": "EXPECTED_FAILURE_DETECTED",
+      "checks_isolated": 5,
+      "reachable_checks": [
+        "CONST_version",
+        "CONST_section_type",
+        "ENUM_lbt_cat",
+        "CONST_section_ext",
+        "CONST_rsvd"
+      ],
+      "dead_checks": [
+        "RANGE_lbt_result",
+        "RANGE_burst_type",
+        "RANGE_cap",
+        "RANGE_seq"
+      ]
+    }
+  },
+  "summary": {
+    "runs": 13,
+    "detected": 13,
+    "rate": 100.0
+  }
+}

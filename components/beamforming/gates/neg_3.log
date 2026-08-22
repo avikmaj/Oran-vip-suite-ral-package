@@ -1,0 +1,15 @@
+EXPECTED_FAILURE_DETECTED: CONST_version
+EXPECTED_FAILURE_DETECTED: ENUM_num_ports
+EXPECTED_FAILURE_DETECTED: RANGE_num_layers
+EXPECTED_FAILURE_DETECTED: ENUM_section_ext
+EXPECTED_FAILURE_DETECTED: CONST_rsvd
+SBSUMMARY,txns=200,legal_err=0,pack_err=0,rt_err=0
+SVA_EXERCISED,legality=200,roundtrip=200,pack=200
+NEGSUMMARY,expected=200,unexpected=0
+--- UVM Report Summary ---
+UVM_INFO :  200
+UVM_WARNING : 0
+UVM_ERROR : 0
+UVM_FATAL : 0
+** TEST PASSED **
+- /home/claude/oran_vip_suite/components/beamforming/tb/beamforming_tb_top.sv:61: Verilog $finish

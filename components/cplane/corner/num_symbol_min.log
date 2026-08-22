@@ -1,0 +1,59 @@
+COVROW,section_type=2,section_ext=2,num_symbol=1,num_sections=1,numerology=3,seq=1
+COVROW,section_type=4,section_ext=4,num_symbol=1,num_sections=1,numerology=3,seq=216
+COVROW,section_type=8,section_ext=4,num_symbol=1,num_sections=1,numerology=3,seq=51
+COVROW,section_type=4,section_ext=4,num_symbol=1,num_sections=2,numerology=4,seq=17
+COVROW,section_type=6,section_ext=3,num_symbol=1,num_sections=4,numerology=4,seq=189
+COVROW,section_type=0,section_ext=5,num_symbol=1,num_sections=2,numerology=1,seq=118
+COVROW,section_type=0,section_ext=10,num_symbol=1,num_sections=1,numerology=4,seq=28
+COVROW,section_type=5,section_ext=10,num_symbol=1,num_sections=8,numerology=4,seq=90
+COVROW,section_type=5,section_ext=10,num_symbol=1,num_sections=1,numerology=2,seq=0
+COVROW,section_type=2,section_ext=2,num_symbol=1,num_sections=4,numerology=2,seq=58
+COVROW,section_type=6,section_ext=4,num_symbol=1,num_sections=4,numerology=0,seq=203
+COVROW,section_type=2,section_ext=9,num_symbol=1,num_sections=8,numerology=0,seq=218
+COVROW,section_type=4,section_ext=9,num_symbol=1,num_sections=8,numerology=3,seq=66
+COVROW,section_type=0,section_ext=9,num_symbol=1,num_sections=1,numerology=4,seq=221
+COVROW,section_type=7,section_ext=11,num_symbol=1,num_sections=1,numerology=4,seq=69
+COVROW,section_type=3,section_ext=11,num_symbol=1,num_sections=1,numerology=0,seq=86
+COVROW,section_type=8,section_ext=6,num_symbol=1,num_sections=4,numerology=0,seq=250
+COVROW,section_type=8,section_ext=6,num_symbol=1,num_sections=4,numerology=0,seq=193
+COVROW,section_type=8,section_ext=6,num_symbol=1,num_sections=1,numerology=0,seq=6
+COVROW,section_type=0,section_ext=6,num_symbol=1,num_sections=8,numerology=1,seq=52
+COVROW,section_type=0,section_ext=6,num_symbol=1,num_sections=8,numerology=0,seq=151
+COVROW,section_type=5,section_ext=6,num_symbol=1,num_sections=8,numerology=0,seq=240
+COVROW,section_type=4,section_ext=4,num_symbol=1,num_sections=4,numerology=4,seq=116
+COVROW,section_type=4,section_ext=3,num_symbol=1,num_sections=2,numerology=4,seq=205
+COVROW,section_type=4,section_ext=2,num_symbol=1,num_sections=4,numerology=2,seq=88
+COVROW,section_type=4,section_ext=6,num_symbol=1,num_sections=4,numerology=2,seq=105
+COVROW,section_type=6,section_ext=1,num_symbol=1,num_sections=1,numerology=4,seq=0
+COVROW,section_type=7,section_ext=6,num_symbol=1,num_sections=1,numerology=2,seq=64
+COVROW,section_type=4,section_ext=7,num_symbol=1,num_sections=2,numerology=1,seq=253
+COVROW,section_type=3,section_ext=6,num_symbol=1,num_sections=2,numerology=2,seq=104
+COVROW,section_type=3,section_ext=6,num_symbol=1,num_sections=2,numerology=2,seq=26
+COVROW,section_type=6,section_ext=6,num_symbol=1,num_sections=1,numerology=0,seq=0
+COVROW,section_type=6,section_ext=6,num_symbol=1,num_sections=1,numerology=0,seq=221
+COVROW,section_type=5,section_ext=6,num_symbol=1,num_sections=1,numerology=3,seq=0
+COVROW,section_type=8,section_ext=1,num_symbol=1,num_sections=2,numerology=2,seq=0
+COVROW,section_type=8,section_ext=3,num_symbol=1,num_sections=2,numerology=2,seq=12
+COVROW,section_type=0,section_ext=3,num_symbol=1,num_sections=4,numerology=2,seq=165
+COVROW,section_type=7,section_ext=6,num_symbol=1,num_sections=8,numerology=4,seq=142
+COVROW,section_type=8,section_ext=8,num_symbol=1,num_sections=4,numerology=4,seq=1
+COVROW,section_type=8,section_ext=8,num_symbol=1,num_sections=1,numerology=2,seq=208
+COVROW,section_type=2,section_ext=8,num_symbol=1,num_sections=1,numerology=2,seq=155
+COVROW,section_type=4,section_ext=8,num_symbol=1,num_sections=8,numerology=0,seq=82
+COVROW,section_type=6,section_ext=5,num_symbol=1,num_sections=4,numerology=4,seq=239
+COVROW,section_type=0,section_ext=11,num_symbol=1,num_sections=2,numerology=4,seq=168
+COVROW,section_type=0,section_ext=11,num_symbol=1,num_sections=8,numerology=4,seq=97
+COVROW,section_type=0,section_ext=10,num_symbol=1,num_sections=8,numerology=3,seq=205
+COVROW,section_type=3,section_ext=5,num_symbol=1,num_sections=8,numerology=4,seq=110
+COVROW,section_type=7,section_ext=10,num_symbol=1,num_sections=2,numerology=3,seq=0
+COVROW,section_type=7,section_ext=8,num_symbol=1,num_sections=4,numerology=0,seq=0
+COVROW,section_type=7,section_ext=10,num_symbol=1,num_sections=4,numerology=0,seq=29
+SBSUMMARY,txns=50,legal_err=0,pack_err=0,rt_err=0
+SVA_EXERCISED,legality=50,roundtrip=50,pack=50
+--- UVM Report Summary ---
+UVM_INFO :  50
+UVM_WARNING : 0
+UVM_ERROR : 0
+UVM_FATAL : 0
+** TEST PASSED **
+- /home/claude/oran_vip_suite/components/cplane/tb/cplane_tb_top.sv:65: Verilog $finish

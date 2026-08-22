@@ -1,0 +1,86 @@
+%Warning-SELRANGE: /home/claude/oran_vip_suite/components/laa/tb/laa_tb_top.sv:30:25: Extracting 37 bits from only 32 bit number
+                                                                                    : ... note: In instance 'laa_tb_top'
+   30 |       m_in.rsvd = r_rsvd[36:0];
+      |                         ^
+                   ... For warning description see https://verilator.org/warn/SELRANGE?v=5.020
+                   ... Use "/* verilator lint_off SELRANGE */" and lint_on around source to disable this message.
+%Warning-SELRANGE: /home/claude/oran_vip_suite/components/laa/tb/laa_tb_top.sv:30:25: Selection index out of range: 36:0 outside 31:0
+                                                                                    : ... note: In instance 'laa_tb_top'
+   30 |       m_in.rsvd = r_rsvd[36:0];
+      |                         ^
+%Warning-UNSIGNED: /home/claude/oran_vip_suite/components/laa/rtl/laa_pkg.sv:31:137: Comparison is constant due to unsigned arithmetic
+                                                                                   : ... note: In instance 'laa_tb_top'
+   31 |     return (h.version == 1) && (h.section_type == 5) && (h.lbt_cat==1 || h.lbt_cat==2 || h.lbt_cat==3 || h.lbt_cat==4) && (h.lbt_result >= 0 && h.lbt_result <= 1) && (h.burst_type >= 0 && h.burst_type <= 1) && (h.cap >= 0 && h.cap <= 3) && (h.section_ext == 3) && (h.seq >= 0 && h.seq <= 255) && (h.rsvd == 0);
+      |                                                                                                                                         ^~
+%Warning-CMPCONST: /home/claude/oran_vip_suite/components/laa/rtl/laa_pkg.sv:31:158: Comparison is constant due to limited range
+                                                                                   : ... note: In instance 'laa_tb_top'
+   31 |     return (h.version == 1) && (h.section_type == 5) && (h.lbt_cat==1 || h.lbt_cat==2 || h.lbt_cat==3 || h.lbt_cat==4) && (h.lbt_result >= 0 && h.lbt_result <= 1) && (h.burst_type >= 0 && h.burst_type <= 1) && (h.cap >= 0 && h.cap <= 3) && (h.section_ext == 3) && (h.seq >= 0 && h.seq <= 255) && (h.rsvd == 0);
+      |                                                                                                                                                              ^~
+%Warning-UNSIGNED: /home/claude/oran_vip_suite/components/laa/rtl/laa_pkg.sv:31:181: Comparison is constant due to unsigned arithmetic
+                                                                                   : ... note: In instance 'laa_tb_top'
+   31 |     return (h.version == 1) && (h.section_type == 5) && (h.lbt_cat==1 || h.lbt_cat==2 || h.lbt_cat==3 || h.lbt_cat==4) && (h.lbt_result >= 0 && h.lbt_result <= 1) && (h.burst_type >= 0 && h.burst_type <= 1) && (h.cap >= 0 && h.cap <= 3) && (h.section_ext == 3) && (h.seq >= 0 && h.seq <= 255) && (h.rsvd == 0);
+      |                                                                                                                                                                                     ^~
+%Warning-CMPCONST: /home/claude/oran_vip_suite/components/laa/rtl/laa_pkg.sv:31:202: Comparison is constant due to limited range
+                                                                                   : ... note: In instance 'laa_tb_top'
+   31 |     return (h.version == 1) && (h.section_type == 5) && (h.lbt_cat==1 || h.lbt_cat==2 || h.lbt_cat==3 || h.lbt_cat==4) && (h.lbt_result >= 0 && h.lbt_result <= 1) && (h.burst_type >= 0 && h.burst_type <= 1) && (h.cap >= 0 && h.cap <= 3) && (h.section_ext == 3) && (h.seq >= 0 && h.seq <= 255) && (h.rsvd == 0);
+      |                                                                                                                                                                                                          ^~
+%Warning-UNSIGNED: /home/claude/oran_vip_suite/components/laa/rtl/laa_pkg.sv:31:218: Comparison is constant due to unsigned arithmetic
+                                                                                   : ... note: In instance 'laa_tb_top'
+   31 |     return (h.version == 1) && (h.section_type == 5) && (h.lbt_cat==1 || h.lbt_cat==2 || h.lbt_cat==3 || h.lbt_cat==4) && (h.lbt_result >= 0 && h.lbt_result <= 1) && (h.burst_type >= 0 && h.burst_type <= 1) && (h.cap >= 0 && h.cap <= 3) && (h.section_ext == 3) && (h.seq >= 0 && h.seq <= 255) && (h.rsvd == 0);
+      |                                                                                                                                                                                                                          ^~
+%Warning-CMPCONST: /home/claude/oran_vip_suite/components/laa/rtl/laa_pkg.sv:31:232: Comparison is constant due to limited range
+                                                                                   : ... note: In instance 'laa_tb_top'
+   31 |     return (h.version == 1) && (h.section_type == 5) && (h.lbt_cat==1 || h.lbt_cat==2 || h.lbt_cat==3 || h.lbt_cat==4) && (h.lbt_result >= 0 && h.lbt_result <= 1) && (h.burst_type >= 0 && h.burst_type <= 1) && (h.cap >= 0 && h.cap <= 3) && (h.section_ext == 3) && (h.seq >= 0 && h.seq <= 255) && (h.rsvd == 0);
+      |                                                                                                                                                                                                                                        ^~
+%Warning-UNSIGNED: /home/claude/oran_vip_suite/components/laa/rtl/laa_pkg.sv:31:272: Comparison is constant due to unsigned arithmetic
+                                                                                   : ... note: In instance 'laa_tb_top'
+   31 |     return (h.version == 1) && (h.section_type == 5) && (h.lbt_cat==1 || h.lbt_cat==2 || h.lbt_cat==3 || h.lbt_cat==4) && (h.lbt_result >= 0 && h.lbt_result <= 1) && (h.burst_type >= 0 && h.burst_type <= 1) && (h.cap >= 0 && h.cap <= 3) && (h.section_ext == 3) && (h.seq >= 0 && h.seq <= 255) && (h.rsvd == 0);
+      |                                                                                                                                                                                                                                                                                ^~
+%Warning-CMPCONST: /home/claude/oran_vip_suite/components/laa/rtl/laa_pkg.sv:31:286: Comparison is constant due to limited range
+                                                                                   : ... note: In instance 'laa_tb_top'
+   31 |     return (h.version == 1) && (h.section_type == 5) && (h.lbt_cat==1 || h.lbt_cat==2 || h.lbt_cat==3 || h.lbt_cat==4) && (h.lbt_result >= 0 && h.lbt_result <= 1) && (h.burst_type >= 0 && h.burst_type <= 1) && (h.cap >= 0 && h.cap <= 3) && (h.section_ext == 3) && (h.seq >= 0 && h.seq <= 255) && (h.rsvd == 0);
+      |                                                                                                                                                                                                                                                                                              ^~
+%Warning-UNSIGNED: /home/claude/oran_vip_suite/components/laa/rtl/laa_pkg.sv:37:23: Comparison is constant due to unsigned arithmetic
+                                                                                  : ... note: In instance 'laa_tb_top'
+   37 |     if(!(h.lbt_result >= 0 && h.lbt_result <= 1)) return "RANGE_lbt_result";
+      |                       ^~
+%Warning-CMPCONST: /home/claude/oran_vip_suite/components/laa/rtl/laa_pkg.sv:37:44: Comparison is constant due to limited range
+                                                                                  : ... note: In instance 'laa_tb_top'
+   37 |     if(!(h.lbt_result >= 0 && h.lbt_result <= 1)) return "RANGE_lbt_result";
+      |                                            ^~
+%Warning-UNSIGNED: /home/claude/oran_vip_suite/components/laa/rtl/laa_pkg.sv:38:23: Comparison is constant due to unsigned arithmetic
+                                                                                  : ... note: In instance 'laa_tb_top'
+   38 |     if(!(h.burst_type >= 0 && h.burst_type <= 1)) return "RANGE_burst_type";
+      |                       ^~
+%Warning-CMPCONST: /home/claude/oran_vip_suite/components/laa/rtl/laa_pkg.sv:38:44: Comparison is constant due to limited range
+                                                                                  : ... note: In instance 'laa_tb_top'
+   38 |     if(!(h.burst_type >= 0 && h.burst_type <= 1)) return "RANGE_burst_type";
+      |                                            ^~
+%Warning-UNSIGNED: /home/claude/oran_vip_suite/components/laa/rtl/laa_pkg.sv:39:16: Comparison is constant due to unsigned arithmetic
+                                                                                  : ... note: In instance 'laa_tb_top'
+   39 |     if(!(h.cap >= 0 && h.cap <= 3)) return "RANGE_cap";
+      |                ^~
+%Warning-CMPCONST: /home/claude/oran_vip_suite/components/laa/rtl/laa_pkg.sv:39:30: Comparison is constant due to limited range
+                                                                                  : ... note: In instance 'laa_tb_top'
+   39 |     if(!(h.cap >= 0 && h.cap <= 3)) return "RANGE_cap";
+      |                              ^~
+%Warning-UNSIGNED: /home/claude/oran_vip_suite/components/laa/rtl/laa_pkg.sv:41:16: Comparison is constant due to unsigned arithmetic
+                                                                                  : ... note: In instance 'laa_tb_top'
+   41 |     if(!(h.seq >= 0 && h.seq <= 255)) return "RANGE_seq";
+      |                ^~
+%Warning-CMPCONST: /home/claude/oran_vip_suite/components/laa/rtl/laa_pkg.sv:41:30: Comparison is constant due to limited range
+                                                                                  : ... note: In instance 'laa_tb_top'
+   41 |     if(!(h.seq >= 0 && h.seq <= 255)) return "RANGE_seq";
+      |                              ^~
+make: Entering directory '/home/claude/oran_vip_suite/components/laa/sim_out/obj_smoke_3'
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable       -Os -c -o sim_main.o /home/claude/oran_vip_suite/components/laa/sim_main.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable       -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable       -c -o verilated_cov.o /usr/share/verilator/include/verilated_cov.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable       -c -o verilated_threads.o /usr/share/verilator/include/verilated_threads.cpp
+/usr/bin/python3 /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vlaa_tb_top.cpp Vlaa_tb_top___024root__DepSet_h748963bf__0.cpp Vlaa_tb_top___024root__DepSet_hc9178945__0.cpp Vlaa_tb_top___024root__Slow.cpp Vlaa_tb_top___024root__DepSet_h748963bf__0__Slow.cpp Vlaa_tb_top___024root__DepSet_hc9178945__0__Slow.cpp Vlaa_tb_top_laa_pkg__Slow.cpp Vlaa_tb_top_laa_pkg__DepSet_hbc68a1a2__0__Slow.cpp Vlaa_tb_top_laa_pkg__DepSet_h9176c738__0__Slow.cpp Vlaa_tb_top__Syms.cpp > Vlaa_tb_top__ALL.cpp
+echo "" > Vlaa_tb_top__ALL.verilator_deplist.tmp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable       -c -o Vlaa_tb_top__ALL.o Vlaa_tb_top__ALL.cpp
+Archive ar -rcs Vlaa_tb_top__ALL.a Vlaa_tb_top__ALL.o
+g++     sim_main.o verilated.o verilated_cov.o verilated_threads.o Vlaa_tb_top__ALL.a    -pthread -lpthread -latomic   -o simv
+rm Vlaa_tb_top__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/claude/oran_vip_suite/components/laa/sim_out/obj_smoke_3'

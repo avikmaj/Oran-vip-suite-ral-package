@@ -1,0 +1,22 @@
+{
+ "isolable": [
+  "CONST_version",
+  "ENUM_ant_cfg",
+  "RANGE_num_layers",
+  "RANGE_tdd_cfg",
+  "RANGE_rank",
+  "CONST_rsvd",
+  "CROSS",
+  "CROSS"
+ ],
+ "non_isolable": [
+  [
+   "RANGE_precoder_idx",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_seq",
+   "unsat-dead-or-coupled"
+  ]
+ ]
+}

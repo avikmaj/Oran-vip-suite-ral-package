@@ -1,0 +1,23 @@
+{
+ "isolable": [
+  "CONST_version",
+  "ENUM_ptp_msg",
+  "ENUM_synce_ql",
+  "RANGE_timing_err",
+  "CONST_rsvd"
+ ],
+ "non_isolable": [
+  [
+   "ENUM_clock_state",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_seq",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_holdover",
+   "unsat-dead-or-coupled"
+  ]
+ ]
+}

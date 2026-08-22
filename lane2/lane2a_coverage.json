@@ -1,0 +1,67 @@
+{
+  "ecpri_transport": {
+    "func_cov": 100.0,
+    "pass": 3,
+    "runs": 3
+  },
+  "cpri_eth": {
+    "func_cov": 100.0,
+    "pass": 3,
+    "runs": 3
+  },
+  "uplane": {
+    "func_cov": 100.0,
+    "pass": 3,
+    "runs": 3
+  },
+  "cplane": {
+    "func_cov": 100.0,
+    "pass": 3,
+    "runs": 3
+  },
+  "splane": {
+    "func_cov": 95.0,
+    "pass": 3,
+    "runs": 3
+  },
+  "mplane": {
+    "func_cov": 100.0,
+    "pass": 3,
+    "runs": 3
+  },
+  "beamforming": {
+    "func_cov": 100.0,
+    "pass": 3,
+    "runs": 3
+  },
+  "compression": {
+    "func_cov": 100.0,
+    "pass": 3,
+    "runs": 3
+  },
+  "prach": {
+    "func_cov": 100.0,
+    "pass": 3,
+    "runs": 3
+  },
+  "mimo_massive": {
+    "func_cov": 94.12,
+    "pass": 3,
+    "runs": 3
+  },
+  "bwp": {
+    "func_cov": 100.0,
+    "pass": 3,
+    "runs": 3
+  },
+  "mmwave": {
+    "func_cov": 100.0,
+    "pass": 3,
+    "runs": 3
+  },
+  "laa": {
+    "func_cov": 93.33,
+    "pass": 3,
+    "runs": 3
+  }
+}

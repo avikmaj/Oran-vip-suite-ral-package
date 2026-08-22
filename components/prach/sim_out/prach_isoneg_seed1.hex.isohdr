@@ -1,0 +1,27 @@
+{
+ "isolable": [
+  "CONST_version",
+  "CONST_section_type",
+  "ENUM_format",
+  "RANGE_numerology",
+  "CONST_rsvd"
+ ],
+ "non_isolable": [
+  [
+   "RANGE_fr",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_zc_root",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_occasion",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_seq",
+   "unsat-dead-or-coupled"
+  ]
+ ]
+}

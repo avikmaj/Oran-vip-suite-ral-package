@@ -1,0 +1,59 @@
+COVROW,section_type=3,numerology=0,num_prb=231,comp_type=0,seq=1
+COVROW,section_type=5,numerology=1,num_prb=163,comp_type=0,seq=216
+COVROW,section_type=5,numerology=3,num_prb=119,comp_type=0,seq=51
+COVROW,section_type=5,numerology=3,num_prb=217,comp_type=2,seq=201
+COVROW,section_type=1,numerology=3,num_prb=188,comp_type=2,seq=201
+COVROW,section_type=1,numerology=2,num_prb=88,comp_type=1,seq=0
+COVROW,section_type=5,numerology=2,num_prb=88,comp_type=1,seq=28
+COVROW,section_type=5,numerology=2,num_prb=88,comp_type=2,seq=90
+COVROW,section_type=5,numerology=2,num_prb=88,comp_type=0,seq=0
+COVROW,section_type=3,numerology=0,num_prb=88,comp_type=2,seq=58
+COVROW,section_type=6,numerology=1,num_prb=88,comp_type=0,seq=82
+COVROW,section_type=6,numerology=1,num_prb=231,comp_type=2,seq=152
+COVROW,section_type=6,numerology=2,num_prb=231,comp_type=3,seq=19
+COVROW,section_type=6,numerology=4,num_prb=20,comp_type=3,seq=199
+COVROW,section_type=6,numerology=4,num_prb=10,comp_type=1,seq=0
+COVROW,section_type=6,numerology=4,num_prb=121,comp_type=1,seq=170
+COVROW,section_type=5,numerology=2,num_prb=251,comp_type=2,seq=0
+COVROW,section_type=5,numerology=2,num_prb=40,comp_type=2,seq=58
+COVROW,section_type=5,numerology=2,num_prb=8,comp_type=0,seq=230
+COVROW,section_type=3,numerology=0,num_prb=151,comp_type=0,seq=0
+COVROW,section_type=5,numerology=2,num_prb=205,comp_type=3,seq=240
+COVROW,section_type=5,numerology=1,num_prb=185,comp_type=3,seq=0
+COVROW,section_type=1,numerology=1,num_prb=126,comp_type=0,seq=205
+COVROW,section_type=1,numerology=0,num_prb=184,comp_type=0,seq=88
+COVROW,section_type=1,numerology=2,num_prb=151,comp_type=0,seq=221
+COVROW,section_type=1,numerology=1,num_prb=151,comp_type=0,seq=173
+COVROW,section_type=6,numerology=1,num_prb=32,comp_type=1,seq=205
+COVROW,section_type=1,numerology=0,num_prb=32,comp_type=1,seq=115
+COVROW,section_type=5,numerology=0,num_prb=32,comp_type=2,seq=0
+COVROW,section_type=5,numerology=3,num_prb=264,comp_type=3,seq=201
+COVROW,section_type=5,numerology=1,num_prb=264,comp_type=0,seq=0
+COVROW,section_type=1,numerology=1,num_prb=222,comp_type=0,seq=0
+COVROW,section_type=5,numerology=3,num_prb=98,comp_type=0,seq=75
+COVROW,section_type=5,numerology=3,num_prb=87,comp_type=0,seq=0
+COVROW,section_type=1,numerology=0,num_prb=39,comp_type=3,seq=165
+COVROW,section_type=6,numerology=2,num_prb=39,comp_type=0,seq=0
+COVROW,section_type=6,numerology=3,num_prb=39,comp_type=2,seq=101
+COVROW,section_type=1,numerology=4,num_prb=39,comp_type=0,seq=148
+COVROW,section_type=6,numerology=1,num_prb=39,comp_type=0,seq=0
+COVROW,section_type=5,numerology=2,num_prb=262,comp_type=3,seq=10
+COVROW,section_type=3,numerology=3,num_prb=156,comp_type=2,seq=188
+COVROW,section_type=1,numerology=4,num_prb=201,comp_type=2,seq=0
+COVROW,section_type=1,numerology=4,num_prb=201,comp_type=2,seq=227
+COVROW,section_type=3,numerology=2,num_prb=201,comp_type=2,seq=105
+COVROW,section_type=5,numerology=1,num_prb=201,comp_type=2,seq=253
+COVROW,section_type=6,numerology=2,num_prb=49,comp_type=2,seq=145
+COVROW,section_type=6,numerology=2,num_prb=49,comp_type=2,seq=0
+COVROW,section_type=6,numerology=2,num_prb=8,comp_type=3,seq=0
+COVROW,section_type=1,numerology=2,num_prb=8,comp_type=0,seq=98
+COVROW,section_type=6,numerology=2,num_prb=126,comp_type=2,seq=211
+SBSUMMARY,txns=50,legal_err=0,pack_err=0,rt_err=0
+SVA_EXERCISED,legality=50,roundtrip=50,pack=50
+--- UVM Report Summary ---
+UVM_INFO :  50
+UVM_WARNING : 0
+UVM_ERROR : 0
+UVM_FATAL : 0
+** TEST PASSED **
+- /home/claude/oran_vip_suite/components/uplane/tb/uplane_tb_top.sv:65: Verilog $finish

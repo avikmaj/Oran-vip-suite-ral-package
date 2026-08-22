@@ -1,0 +1,40 @@
+{
+  "component": "mplane",
+  "test": "rand24",
+  "seed": 24,
+  "lane": 1,
+  "sim": "verilator",
+  "sim_version": "Verilator 5.020",
+  "status": "PASS",
+  "uvm_error": 0,
+  "uvm_fatal": 0,
+  "transactions": 300,
+  "sim_exit": 0,
+  "functional_coverage": 100.0,
+  "functional_bins_covered": 13,
+  "functional_bins_total": 13,
+  "cov_bins": {
+    "COV-002.netconf_op_0": 1,
+    "COV-002.netconf_op_1": 1,
+    "COV-002.netconf_op_2": 1,
+    "COV-002.netconf_op_3": 1,
+    "COV-002.netconf_op_4": 1,
+    "COV-003.datastore_0": 1,
+    "COV-003.datastore_1": 1,
+    "COV-003.datastore_2": 1,
+    "COV-005.ant_cal_0": 1,
+    "COV-005.ant_cal_1": 1,
+    "COV-007.seq_min": 1,
+    "COV-007.seq_max": 1,
+    "COV-007.seq_mid": 1
+  },
+  "assertions_exercised": {
+    "legality": 300,
+    "roundtrip": 300,
+    "pack": 300
+  },
+  "vacuous_assertions": [],
+  "spec_ref": "O-RAN.WG4.MP M-plane NETCONF/YANG O1",
+  "req_provenance": "DERIVED",
+  "timestamp": "2026-08-09T07:46:43.948773Z"
+}

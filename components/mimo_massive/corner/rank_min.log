@@ -1,0 +1,59 @@
+COVROW,ant_cfg=2,tdd_cfg=3,seq=48
+COVROW,ant_cfg=64,tdd_cfg=2,seq=15
+COVROW,ant_cfg=32,tdd_cfg=3,seq=119
+COVROW,ant_cfg=32,tdd_cfg=0,seq=151
+COVROW,ant_cfg=32,tdd_cfg=5,seq=201
+COVROW,ant_cfg=32,tdd_cfg=0,seq=0
+COVROW,ant_cfg=32,tdd_cfg=0,seq=86
+COVROW,ant_cfg=32,tdd_cfg=0,seq=2
+COVROW,ant_cfg=64,tdd_cfg=4,seq=0
+COVROW,ant_cfg=8,tdd_cfg=0,seq=117
+COVROW,ant_cfg=16,tdd_cfg=0,seq=36
+COVROW,ant_cfg=16,tdd_cfg=0,seq=0
+COVROW,ant_cfg=16,tdd_cfg=2,seq=12
+COVROW,ant_cfg=4,tdd_cfg=2,seq=10
+COVROW,ant_cfg=8,tdd_cfg=4,seq=15
+COVROW,ant_cfg=8,tdd_cfg=2,seq=39
+COVROW,ant_cfg=16,tdd_cfg=3,seq=0
+COVROW,ant_cfg=16,tdd_cfg=2,seq=199
+COVROW,ant_cfg=8,tdd_cfg=0,seq=109
+COVROW,ant_cfg=8,tdd_cfg=6,seq=20
+COVROW,ant_cfg=4,tdd_cfg=0,seq=0
+COVROW,ant_cfg=64,tdd_cfg=0,seq=0
+COVROW,ant_cfg=64,tdd_cfg=4,seq=114
+COVROW,ant_cfg=16,tdd_cfg=0,seq=0
+COVROW,ant_cfg=32,tdd_cfg=6,seq=230
+COVROW,ant_cfg=2,tdd_cfg=6,seq=161
+COVROW,ant_cfg=32,tdd_cfg=2,seq=204
+COVROW,ant_cfg=32,tdd_cfg=2,seq=106
+COVROW,ant_cfg=16,tdd_cfg=0,seq=0
+COVROW,ant_cfg=16,tdd_cfg=3,seq=0
+COVROW,ant_cfg=4,tdd_cfg=0,seq=78
+COVROW,ant_cfg=4,tdd_cfg=5,seq=163
+COVROW,ant_cfg=32,tdd_cfg=1,seq=105
+COVROW,ant_cfg=8,tdd_cfg=5,seq=128
+COVROW,ant_cfg=64,tdd_cfg=2,seq=0
+COVROW,ant_cfg=64,tdd_cfg=0,seq=0
+COVROW,ant_cfg=1,tdd_cfg=2,seq=253
+COVROW,ant_cfg=2,tdd_cfg=2,seq=0
+COVROW,ant_cfg=4,tdd_cfg=2,seq=190
+COVROW,ant_cfg=32,tdd_cfg=2,seq=218
+COVROW,ant_cfg=16,tdd_cfg=3,seq=84
+COVROW,ant_cfg=1,tdd_cfg=5,seq=41
+COVROW,ant_cfg=1,tdd_cfg=3,seq=0
+COVROW,ant_cfg=1,tdd_cfg=5,seq=0
+COVROW,ant_cfg=16,tdd_cfg=4,seq=75
+COVROW,ant_cfg=4,tdd_cfg=4,seq=0
+COVROW,ant_cfg=4,tdd_cfg=4,seq=6
+COVROW,ant_cfg=4,tdd_cfg=2,seq=0
+COVROW,ant_cfg=2,tdd_cfg=0,seq=0
+COVROW,ant_cfg=8,tdd_cfg=5,seq=0
+SBSUMMARY,txns=50,legal_err=0,pack_err=0,rt_err=0
+SVA_EXERCISED,legality=50,roundtrip=50,pack=50
+--- UVM Report Summary ---
+UVM_INFO :  50
+UVM_WARNING : 0
+UVM_ERROR : 0
+UVM_FATAL : 0
+** TEST PASSED **
+- /home/claude/oran_vip_suite/components/mimo_massive/tb/mimo_massive_tb_top.sv:61: Verilog $finish

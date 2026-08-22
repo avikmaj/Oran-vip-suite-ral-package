@@ -1,0 +1,59 @@
+COVROW,ptp_msg=1,clock_state=0,synce_ql=0,seq=58915,holdover=0
+COVROW,ptp_msg=3,clock_state=0,synce_ql=0,seq=29984,holdover=0
+COVROW,ptp_msg=5,clock_state=3,synce_ql=0,seq=3806,holdover=0
+COVROW,ptp_msg=5,clock_state=3,synce_ql=0,seq=0,holdover=0
+COVROW,ptp_msg=5,clock_state=0,synce_ql=0,seq=55326,holdover=1
+COVROW,ptp_msg=5,clock_state=3,synce_ql=0,seq=62944,holdover=0
+COVROW,ptp_msg=5,clock_state=2,synce_ql=0,seq=0,holdover=1
+COVROW,ptp_msg=0,clock_state=2,synce_ql=0,seq=51589,holdover=0
+COVROW,ptp_msg=0,clock_state=1,synce_ql=0,seq=46304,holdover=0
+COVROW,ptp_msg=5,clock_state=1,synce_ql=0,seq=26933,holdover=1
+COVROW,ptp_msg=5,clock_state=3,synce_ql=0,seq=54319,holdover=1
+COVROW,ptp_msg=5,clock_state=1,synce_ql=0,seq=0,holdover=0
+COVROW,ptp_msg=0,clock_state=2,synce_ql=0,seq=24197,holdover=1
+COVROW,ptp_msg=1,clock_state=2,synce_ql=0,seq=65076,holdover=1
+COVROW,ptp_msg=1,clock_state=2,synce_ql=0,seq=0,holdover=0
+COVROW,ptp_msg=3,clock_state=1,synce_ql=0,seq=55923,holdover=1
+COVROW,ptp_msg=5,clock_state=2,synce_ql=0,seq=7705,holdover=0
+COVROW,ptp_msg=0,clock_state=2,synce_ql=0,seq=33077,holdover=0
+COVROW,ptp_msg=0,clock_state=3,synce_ql=0,seq=4905,holdover=1
+COVROW,ptp_msg=3,clock_state=3,synce_ql=0,seq=2254,holdover=0
+COVROW,ptp_msg=3,clock_state=1,synce_ql=0,seq=34935,holdover=0
+COVROW,ptp_msg=5,clock_state=1,synce_ql=0,seq=11099,holdover=0
+COVROW,ptp_msg=2,clock_state=2,synce_ql=0,seq=14930,holdover=1
+COVROW,ptp_msg=2,clock_state=2,synce_ql=0,seq=0,holdover=1
+COVROW,ptp_msg=2,clock_state=3,synce_ql=0,seq=29322,holdover=1
+COVROW,ptp_msg=0,clock_state=2,synce_ql=0,seq=38762,holdover=1
+COVROW,ptp_msg=0,clock_state=3,synce_ql=0,seq=21939,holdover=0
+COVROW,ptp_msg=0,clock_state=2,synce_ql=0,seq=41216,holdover=0
+COVROW,ptp_msg=2,clock_state=2,synce_ql=0,seq=52239,holdover=1
+COVROW,ptp_msg=2,clock_state=3,synce_ql=0,seq=24015,holdover=1
+COVROW,ptp_msg=2,clock_state=3,synce_ql=0,seq=0,holdover=0
+COVROW,ptp_msg=2,clock_state=2,synce_ql=0,seq=12064,holdover=1
+COVROW,ptp_msg=2,clock_state=0,synce_ql=0,seq=0,holdover=0
+COVROW,ptp_msg=2,clock_state=1,synce_ql=0,seq=0,holdover=1
+COVROW,ptp_msg=1,clock_state=1,synce_ql=0,seq=26926,holdover=0
+COVROW,ptp_msg=5,clock_state=0,synce_ql=0,seq=56383,holdover=1
+COVROW,ptp_msg=2,clock_state=3,synce_ql=0,seq=2478,holdover=0
+COVROW,ptp_msg=2,clock_state=3,synce_ql=0,seq=30609,holdover=0
+COVROW,ptp_msg=5,clock_state=1,synce_ql=0,seq=29499,holdover=0
+COVROW,ptp_msg=1,clock_state=1,synce_ql=0,seq=20901,holdover=0
+COVROW,ptp_msg=2,clock_state=3,synce_ql=0,seq=49440,holdover=0
+COVROW,ptp_msg=3,clock_state=2,synce_ql=0,seq=5335,holdover=0
+COVROW,ptp_msg=3,clock_state=2,synce_ql=0,seq=10748,holdover=0
+COVROW,ptp_msg=3,clock_state=2,synce_ql=0,seq=0,holdover=0
+COVROW,ptp_msg=5,clock_state=1,synce_ql=0,seq=0,holdover=0
+COVROW,ptp_msg=4,clock_state=2,synce_ql=0,seq=19452,holdover=0
+COVROW,ptp_msg=4,clock_state=1,synce_ql=0,seq=0,holdover=1
+COVROW,ptp_msg=4,clock_state=0,synce_ql=0,seq=0,holdover=0
+COVROW,ptp_msg=2,clock_state=2,synce_ql=0,seq=42426,holdover=1
+COVROW,ptp_msg=3,clock_state=3,synce_ql=0,seq=50120,holdover=0
+SBSUMMARY,txns=50,legal_err=0,pack_err=0,rt_err=0
+SVA_EXERCISED,legality=50,roundtrip=50,pack=50
+--- UVM Report Summary ---
+UVM_INFO :  50
+UVM_WARNING : 0
+UVM_ERROR : 0
+UVM_FATAL : 0
+** TEST PASSED **
+- /home/claude/oran_vip_suite/components/splane/tb/splane_tb_top.sv:61: Verilog $finish

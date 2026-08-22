@@ -1,0 +1,23 @@
+{
+ "isolable": [
+  "CONST_version",
+  "ENUM_section_type",
+  "RANGE_numerology",
+  "RANGE_start_prb",
+  "RANGE_num_prb",
+  "RANGE_symbol_id",
+  "RANGE_comp_bits",
+  "CONST_rsvd",
+  "CROSS"
+ ],
+ "non_isolable": [
+  [
+   "ENUM_comp_type",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_seq",
+   "unsat-dead-or-coupled"
+  ]
+ ]
+}

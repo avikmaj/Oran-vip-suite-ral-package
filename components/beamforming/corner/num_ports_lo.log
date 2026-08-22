@@ -1,0 +1,59 @@
+COVROW,num_ports=1,section_ext=1,seq=0
+COVROW,num_ports=1,section_ext=1,seq=0
+COVROW,num_ports=1,section_ext=1,seq=216
+COVROW,num_ports=1,section_ext=1,seq=0
+COVROW,num_ports=1,section_ext=1,seq=0
+COVROW,num_ports=1,section_ext=1,seq=0
+COVROW,num_ports=1,section_ext=6,seq=157
+COVROW,num_ports=1,section_ext=4,seq=0
+COVROW,num_ports=1,section_ext=4,seq=28
+COVROW,num_ports=1,section_ext=4,seq=0
+COVROW,num_ports=1,section_ext=4,seq=0
+COVROW,num_ports=1,section_ext=4,seq=0
+COVROW,num_ports=1,section_ext=4,seq=0
+COVROW,num_ports=1,section_ext=4,seq=0
+COVROW,num_ports=1,section_ext=4,seq=0
+COVROW,num_ports=1,section_ext=5,seq=152
+COVROW,num_ports=1,section_ext=5,seq=213
+COVROW,num_ports=1,section_ext=5,seq=19
+COVROW,num_ports=1,section_ext=5,seq=0
+COVROW,num_ports=1,section_ext=5,seq=0
+COVROW,num_ports=1,section_ext=5,seq=20
+COVROW,num_ports=1,section_ext=1,seq=0
+COVROW,num_ports=1,section_ext=1,seq=0
+COVROW,num_ports=1,section_ext=1,seq=0
+COVROW,num_ports=1,section_ext=5,seq=0
+COVROW,num_ports=1,section_ext=5,seq=0
+COVROW,num_ports=1,section_ext=5,seq=0
+COVROW,num_ports=1,section_ext=5,seq=0
+COVROW,num_ports=1,section_ext=6,seq=0
+COVROW,num_ports=1,section_ext=6,seq=0
+COVROW,num_ports=1,section_ext=6,seq=0
+COVROW,num_ports=1,section_ext=6,seq=0
+COVROW,num_ports=1,section_ext=6,seq=0
+COVROW,num_ports=1,section_ext=6,seq=0
+COVROW,num_ports=1,section_ext=6,seq=0
+COVROW,num_ports=1,section_ext=6,seq=0
+COVROW,num_ports=1,section_ext=6,seq=0
+COVROW,num_ports=1,section_ext=4,seq=115
+COVROW,num_ports=1,section_ext=4,seq=188
+COVROW,num_ports=1,section_ext=5,seq=0
+COVROW,num_ports=1,section_ext=5,seq=0
+COVROW,num_ports=1,section_ext=1,seq=0
+COVROW,num_ports=1,section_ext=6,seq=0
+COVROW,num_ports=1,section_ext=5,seq=0
+COVROW,num_ports=1,section_ext=4,seq=139
+COVROW,num_ports=1,section_ext=4,seq=0
+COVROW,num_ports=1,section_ext=4,seq=0
+COVROW,num_ports=1,section_ext=5,seq=179
+COVROW,num_ports=1,section_ext=5,seq=0
+COVROW,num_ports=1,section_ext=5,seq=101
+SBSUMMARY,txns=50,legal_err=0,pack_err=0,rt_err=0
+SVA_EXERCISED,legality=50,roundtrip=50,pack=50
+--- UVM Report Summary ---
+UVM_INFO :  50
+UVM_WARNING : 0
+UVM_ERROR : 0
+UVM_FATAL : 0
+** TEST PASSED **
+- /home/claude/oran_vip_suite/components/beamforming/tb/beamforming_tb_top.sv:61: Verilog $finish

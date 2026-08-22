@@ -1,0 +1,31 @@
+{
+ "isolable": [
+  "CONST_version",
+  "ENUM_bw_profile",
+  "ENUM_synce_ql",
+  "RANGE_subframe",
+  "CONST_rsvd"
+ ],
+ "non_isolable": [
+  [
+   "RANGE_direction",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_iq_rate_id",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_frame_id",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_cm_flag",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_seq",
+   "unsat-dead-or-coupled"
+  ]
+ ]
+}

@@ -1,0 +1,59 @@
+COVROW,bw_profile=1,direction=0,synce_ql=11,cm_flag=1,seq=1
+COVROW,bw_profile=2,direction=0,synce_ql=0,cm_flag=1,seq=0
+COVROW,bw_profile=3,direction=1,synce_ql=0,cm_flag=0,seq=151
+COVROW,bw_profile=3,direction=1,synce_ql=0,cm_flag=0,seq=206
+COVROW,bw_profile=1,direction=1,synce_ql=0,cm_flag=1,seq=201
+COVROW,bw_profile=1,direction=0,synce_ql=0,cm_flag=0,seq=66
+COVROW,bw_profile=4,direction=0,synce_ql=0,cm_flag=1,seq=169
+COVROW,bw_profile=4,direction=0,synce_ql=0,cm_flag=0,seq=8
+COVROW,bw_profile=2,direction=0,synce_ql=0,cm_flag=1,seq=150
+COVROW,bw_profile=2,direction=0,synce_ql=2,cm_flag=0,seq=10
+COVROW,bw_profile=3,direction=0,synce_ql=2,cm_flag=0,seq=164
+COVROW,bw_profile=3,direction=1,synce_ql=4,cm_flag=1,seq=213
+COVROW,bw_profile=1,direction=0,synce_ql=15,cm_flag=0,seq=221
+COVROW,bw_profile=3,direction=1,synce_ql=15,cm_flag=0,seq=69
+COVROW,bw_profile=1,direction=0,synce_ql=15,cm_flag=0,seq=0
+COVROW,bw_profile=1,direction=1,synce_ql=4,cm_flag=1,seq=53
+COVROW,bw_profile=3,direction=0,synce_ql=4,cm_flag=0,seq=136
+COVROW,bw_profile=2,direction=0,synce_ql=4,cm_flag=0,seq=20
+COVROW,bw_profile=4,direction=0,synce_ql=0,cm_flag=1,seq=244
+COVROW,bw_profile=1,direction=0,synce_ql=4,cm_flag=0,seq=233
+COVROW,bw_profile=1,direction=1,synce_ql=2,cm_flag=1,seq=229
+COVROW,bw_profile=4,direction=0,synce_ql=2,cm_flag=0,seq=0
+COVROW,bw_profile=3,direction=0,synce_ql=2,cm_flag=0,seq=167
+COVROW,bw_profile=5,direction=0,synce_ql=2,cm_flag=0,seq=0
+COVROW,bw_profile=5,direction=0,synce_ql=0,cm_flag=0,seq=128
+COVROW,bw_profile=4,direction=0,synce_ql=0,cm_flag=1,seq=64
+COVROW,bw_profile=2,direction=1,synce_ql=0,cm_flag=0,seq=115
+COVROW,bw_profile=3,direction=0,synce_ql=0,cm_flag=1,seq=104
+COVROW,bw_profile=5,direction=1,synce_ql=0,cm_flag=1,seq=26
+COVROW,bw_profile=3,direction=1,synce_ql=0,cm_flag=1,seq=0
+COVROW,bw_profile=3,direction=0,synce_ql=0,cm_flag=1,seq=0
+COVROW,bw_profile=0,direction=0,synce_ql=11,cm_flag=0,seq=0
+COVROW,bw_profile=1,direction=0,synce_ql=11,cm_flag=1,seq=0
+COVROW,bw_profile=1,direction=0,synce_ql=0,cm_flag=0,seq=191
+COVROW,bw_profile=2,direction=0,synce_ql=11,cm_flag=0,seq=252
+COVROW,bw_profile=3,direction=0,synce_ql=11,cm_flag=1,seq=101
+COVROW,bw_profile=0,direction=0,synce_ql=11,cm_flag=0,seq=148
+COVROW,bw_profile=3,direction=0,synce_ql=11,cm_flag=0,seq=155
+COVROW,bw_profile=2,direction=1,synce_ql=15,cm_flag=0,seq=82
+COVROW,bw_profile=3,direction=1,synce_ql=15,cm_flag=1,seq=25
+COVROW,bw_profile=5,direction=1,synce_ql=11,cm_flag=0,seq=0
+COVROW,bw_profile=5,direction=1,synce_ql=11,cm_flag=0,seq=227
+COVROW,bw_profile=5,direction=1,synce_ql=11,cm_flag=1,seq=105
+COVROW,bw_profile=2,direction=0,synce_ql=2,cm_flag=1,seq=226
+COVROW,bw_profile=2,direction=0,synce_ql=11,cm_flag=1,seq=199
+COVROW,bw_profile=5,direction=1,synce_ql=0,cm_flag=0,seq=0
+COVROW,bw_profile=3,direction=0,synce_ql=0,cm_flag=0,seq=0
+COVROW,bw_profile=0,direction=0,synce_ql=11,cm_flag=1,seq=98
+COVROW,bw_profile=3,direction=0,synce_ql=11,cm_flag=0,seq=211
+COVROW,bw_profile=3,direction=0,synce_ql=15,cm_flag=0,seq=0
+SBSUMMARY,txns=50,legal_err=0,pack_err=0,rt_err=0
+SVA_EXERCISED,legality=50,roundtrip=50,pack=50
+--- UVM Report Summary ---
+UVM_INFO :  50
+UVM_WARNING : 0
+UVM_ERROR : 0
+UVM_FATAL : 0
+** TEST PASSED **
+- /home/claude/oran_vip_suite/components/cpri_eth/tb/cpri_eth_tb_top.sv:65: Verilog $finish

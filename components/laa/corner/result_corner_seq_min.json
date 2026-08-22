@@ -1,0 +1,42 @@
+{
+  "component": "laa",
+  "test": "corner_seq_min",
+  "seed": 1,
+  "lane": 1,
+  "sim": "verilator",
+  "sim_version": "Verilator 5.020",
+  "status": "PASS",
+  "uvm_error": 0,
+  "uvm_fatal": 0,
+  "transactions": 50,
+  "sim_exit": 0,
+  "functional_coverage": 86.67,
+  "functional_bins_covered": 13,
+  "functional_bins_total": 15,
+  "cov_bins": {
+    "COV-003.lbt_cat_1": 1,
+    "COV-003.lbt_cat_2": 1,
+    "COV-003.lbt_cat_3": 1,
+    "COV-003.lbt_cat_4": 1,
+    "COV-004.lbt_result_0": 1,
+    "COV-004.lbt_result_1": 1,
+    "COV-005.burst_type_0": 1,
+    "COV-005.burst_type_1": 1,
+    "COV-006.cap_0": 1,
+    "COV-006.cap_1": 1,
+    "COV-006.cap_2": 1,
+    "COV-006.cap_3": 1,
+    "COV-008.seq_min": 1,
+    "COV-008.seq_max": 0,
+    "COV-008.seq_mid": 0
+  },
+  "assertions_exercised": {
+    "legality": 50,
+    "roundtrip": 50,
+    "pack": 50
+  },
+  "vacuous_assertions": [],
+  "spec_ref": "O-RAN.WG4.CUS Section Type 5 LAA + LBT Cat1-4",
+  "req_provenance": "DERIVED",
+  "timestamp": "2026-08-09T08:14:22.973339Z"
+}

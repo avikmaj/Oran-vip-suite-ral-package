@@ -1,0 +1,59 @@
+COVROW,lbt_cat=2,lbt_result=0,burst_type=1,cap=3,seq=0
+COVROW,lbt_cat=1,lbt_result=0,burst_type=1,cap=0,seq=136
+COVROW,lbt_cat=2,lbt_result=0,burst_type=1,cap=0,seq=0
+COVROW,lbt_cat=4,lbt_result=0,burst_type=0,cap=0,seq=119
+COVROW,lbt_cat=4,lbt_result=0,burst_type=0,cap=0,seq=151
+COVROW,lbt_cat=4,lbt_result=0,burst_type=0,cap=0,seq=201
+COVROW,lbt_cat=1,lbt_result=0,burst_type=1,cap=2,seq=191
+COVROW,lbt_cat=1,lbt_result=0,burst_type=1,cap=0,seq=157
+COVROW,lbt_cat=4,lbt_result=0,burst_type=0,cap=1,seq=118
+COVROW,lbt_cat=4,lbt_result=0,burst_type=0,cap=0,seq=66
+COVROW,lbt_cat=2,lbt_result=0,burst_type=0,cap=0,seq=211
+COVROW,lbt_cat=3,lbt_result=0,burst_type=1,cap=0,seq=90
+COVROW,lbt_cat=3,lbt_result=0,burst_type=0,cap=0,seq=8
+COVROW,lbt_cat=3,lbt_result=0,burst_type=0,cap=0,seq=130
+COVROW,lbt_cat=2,lbt_result=0,burst_type=1,cap=3,seq=12
+COVROW,lbt_cat=3,lbt_result=0,burst_type=1,cap=0,seq=0
+COVROW,lbt_cat=1,lbt_result=0,burst_type=0,cap=1,seq=218
+COVROW,lbt_cat=1,lbt_result=0,burst_type=0,cap=0,seq=164
+COVROW,lbt_cat=4,lbt_result=0,burst_type=0,cap=0,seq=39
+COVROW,lbt_cat=3,lbt_result=0,burst_type=1,cap=0,seq=0
+COVROW,lbt_cat=4,lbt_result=0,burst_type=1,cap=0,seq=221
+COVROW,lbt_cat=4,lbt_result=0,burst_type=1,cap=0,seq=0
+COVROW,lbt_cat=1,lbt_result=0,burst_type=0,cap=1,seq=0
+COVROW,lbt_cat=1,lbt_result=0,burst_type=0,cap=0,seq=86
+COVROW,lbt_cat=2,lbt_result=0,burst_type=1,cap=2,seq=0
+COVROW,lbt_cat=4,lbt_result=0,burst_type=1,cap=0,seq=0
+COVROW,lbt_cat=3,lbt_result=0,burst_type=0,cap=1,seq=136
+COVROW,lbt_cat=3,lbt_result=0,burst_type=0,cap=0,seq=151
+COVROW,lbt_cat=1,lbt_result=0,burst_type=0,cap=3,seq=230
+COVROW,lbt_cat=2,lbt_result=0,burst_type=0,cap=0,seq=150
+COVROW,lbt_cat=4,lbt_result=0,burst_type=1,cap=0,seq=151
+COVROW,lbt_cat=3,lbt_result=0,burst_type=1,cap=0,seq=233
+COVROW,lbt_cat=3,lbt_result=0,burst_type=1,cap=1,seq=126
+COVROW,lbt_cat=3,lbt_result=0,burst_type=0,cap=0,seq=0
+COVROW,lbt_cat=1,lbt_result=0,burst_type=1,cap=0,seq=47
+COVROW,lbt_cat=1,lbt_result=0,burst_type=0,cap=0,seq=11
+COVROW,lbt_cat=1,lbt_result=0,burst_type=1,cap=1,seq=167
+COVROW,lbt_cat=2,lbt_result=0,burst_type=0,cap=2,seq=150
+COVROW,lbt_cat=2,lbt_result=0,burst_type=0,cap=1,seq=221
+COVROW,lbt_cat=1,lbt_result=0,burst_type=0,cap=0,seq=128
+COVROW,lbt_cat=4,lbt_result=0,burst_type=0,cap=0,seq=0
+COVROW,lbt_cat=1,lbt_result=0,burst_type=0,cap=1,seq=141
+COVROW,lbt_cat=4,lbt_result=0,burst_type=0,cap=1,seq=0
+COVROW,lbt_cat=2,lbt_result=0,burst_type=0,cap=3,seq=0
+COVROW,lbt_cat=2,lbt_result=0,burst_type=1,cap=1,seq=0
+COVROW,lbt_cat=3,lbt_result=0,burst_type=0,cap=3,seq=128
+COVROW,lbt_cat=1,lbt_result=0,burst_type=1,cap=1,seq=20
+COVROW,lbt_cat=1,lbt_result=0,burst_type=1,cap=0,seq=0
+COVROW,lbt_cat=1,lbt_result=0,burst_type=0,cap=3,seq=166
+COVROW,lbt_cat=1,lbt_result=0,burst_type=1,cap=0,seq=151
+SBSUMMARY,txns=50,legal_err=0,pack_err=0,rt_err=0
+SVA_EXERCISED,legality=50,roundtrip=50,pack=50
+--- UVM Report Summary ---
+UVM_INFO :  50
+UVM_WARNING : 0
+UVM_ERROR : 0
+UVM_FATAL : 0
+** TEST PASSED **
+- /home/claude/oran_vip_suite/components/laa/tb/laa_tb_top.sv:63: Verilog $finish

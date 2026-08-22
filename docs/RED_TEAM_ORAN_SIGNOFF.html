@@ -1,0 +1,155 @@
+<!doctype html><html lang=en><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>O-RAN VIP Suite — Red-Team of the Signoff</title>
+<style>
+:root{--ink:#16232e;--brand:#0f3350;--line:#e5eaed;--blk:#b0121a;--hi:#c0392b;--med:#d98324;--low:#4a7a2a;--good:#1f8f4e}
+*{box-sizing:border-box}
+body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#eef1f4;color:var(--ink)}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 20px 70px}
+header{background:linear-gradient(135deg,#3a0d10,#7a1a22);color:#fff;border-radius:14px;padding:22px 26px;box-shadow:0 3px 10px rgba(0,0,0,.18)}
+header h1{margin:0 0 4px;font-size:23px} header .m{opacity:.9;font-size:12.5px;line-height:1.5}
+.thesis{background:#fff;border-left:6px solid var(--blk);border-radius:10px;padding:14px 18px;margin:16px 0;font-size:13.5px;line-height:1.6;box-shadow:0 1px 5px rgba(0,0,0,.09)}
+.thesis b{color:var(--blk)}
+h2{font-size:17px;color:var(--brand);border-left:5px solid var(--brand);padding-left:10px;margin:26px 0 8px}
+.f{background:#fff;border-radius:11px;padding:15px 18px;margin:12px 0;box-shadow:0 1px 5px rgba(0,0,0,.09);border-top:4px solid #ccc}
+.f.blocker{border-top-color:var(--blk)} .f.high{border-top-color:var(--hi)} .f.med{border-top-color:var(--med)} .f.low{border-top-color:var(--low)}
+.f h3{margin:0 0 3px;font-size:15px;color:#0f3350}
+.sev{display:inline-block;font-size:10.5px;font-weight:700;color:#fff;border-radius:5px;padding:2px 8px;margin-right:8px;vertical-align:middle}
+.sev.blocker{background:var(--blk)} .sev.high{background:var(--hi)} .sev.med{background:var(--med)} .sev.low{background:var(--low)}
+.f .row{font-size:12.5px;line-height:1.55;margin:7px 0}
+.f .k{font-weight:700;color:#0f3350;text-transform:uppercase;font-size:10.5px;letter-spacing:.03em;display:block;margin-bottom:1px}
+code{background:#eef3f7;padding:0 4px;border-radius:4px;font-size:11px;font-family:ui-monospace,Menlo,Consolas,monospace}
+.ev{background:#0f2233;color:#dfe9f0;border-radius:7px;padding:8px 11px;font-size:11px;font-family:ui-monospace,Menlo,Consolas,monospace;overflow-x:auto;margin:4px 0}
+table{border-collapse:collapse;width:100%;font-size:12px;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.09)}
+th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:var(--brand);color:#fff;font-weight:600;font-size:11.5px}
+.proves{background:#eaf5ee;border-left:5px solid var(--good)}
+.foot{font-size:11px;color:#6b7883;margin-top:20px;border-top:1px solid var(--line);padding-top:12px}
+.pill{font-size:10.5px;padding:2px 7px;border-radius:5px;background:#eef3f7;color:#0f3350;border:1px solid #d5e0e8}
+@media print{@page{size:A4;margin:11mm 9mm}body{background:#fff}.wrap{max-width:100%;padding:0}header,.thesis,.f,table{box-shadow:none}.f,.thesis{break-inside:avoid;page-break-inside:avoid}header{-webkit-print-color-adjust:exact;print-color-adjust:exact}h2{break-after:avoid}.sev,th,.ev{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style></head><body><div class=wrap>
+<header>
+<h1>O-RAN VIP Suite — Red-Team of the Signoff</h1>
+<div class=m>Author: AVIK MAJUMDAR &middot; AVIK VIP FACTORY &middot; adversarial audit + protocol-gap sweep &middot; 2026-08-11<br>
+Question under test: <b>what does 1522/1522 (now 1523/1523) NOT prove?</b> &middot; Every finding verified against source, file:line cited.</div>
+</header>
+
+<div class=thesis>
+<b>Bottom line.</b> 1523/1523 proves the generated testbench is <b>internally consistent and runs clean on Verilator</b>: the
+spec&rarr;stimulus&rarr;model&rarr;checker&rarr;coverage pipeline executes end-to-end and reproducibly, each header codec's bit-layout is
+self-consistent, and the infrastructure (gates, adjudication, coverage merge, reporting) works. It does <b>not</b> prove that a real
+RU design is correct (there is no RTL design under test), that the model matches the authoritative O-RAN spec (requirements are
+DERIVED and self-checked), that coverage is adequate (bins are self-derived; covergroup % uncomputed), that the assertions check
+protocol behaviour (procedural counters / one vacuous SVA), or that the checkers can catch a bug they did not themselves plant
+(zero mutation testing; zero bugs ever found). <b>This is a VIP/model integrity result, not a DUT-signoff result.</b>
+</div>
+
+<h2>What 1523/1523 legitimately DOES prove</h2>
+<div class="f proves">
+<div class=row>&bull; The full generate&rarr;compile&rarr;run&rarr;adjudicate&rarr;coverage&rarr;report flow executes end-to-end for all 13 components + RAL, deterministically (seed-locked) on Verilator 5.020/5.050.</div>
+<div class=row>&bull; Each 64-bit header codec is bit-layout self-consistent: SV <code>pack</code> matches the Python golden pack, and <code>unpack</code> inverts <code>pack</code>.</div>
+<div class=row>&bull; The negative path's legality function fires on injected-illegal fields (EXPECTED_FAILURE_DETECTED), and the adjudicator derives STATUS from executed log evidence, not inference.</div>
+<div class=row>&bull; The RAL exercises the standard uvm_reg flow (map/adapter/predictor, front-door RW, RO write-protect) against a memory model, with 0 mismatches.</div>
+<div class=row>&bull; As a <b>reusable VIP scaffold and methodology harness</b>, the suite is real, working engineering.</div>
+</div>
+
+<h2>Findings — ranked by severity</h2>
+
+<div class="f blocker">
+<h3><span class="sev blocker">BLOCKER</span>RT-001 &middot; There is no RTL design under test</h3>
+<div class=row><span class=k>Claim</span>The "block under test" is a purely combinational pack/unpack codec — no clock, no state, no protocol behaviour. Signoff therefore cannot assert design correctness.</div>
+<div class=row><span class=k>Evidence</span><code>components/&lt;slug&gt;/rtl/&lt;slug&gt;_codec.sv</code> — 13/13 codecs contain zero clocked logic (no <code>posedge</code>/<code>always_ff</code>):</div>
+<div class=ev>module uplane_codec (...); assign wire_hdr = uplane_pack(in_hdr); assign out_hdr = uplane_unpack(rx_wire); endmodule</div>
+<div class=row><span class=k>What 1523 does not prove</span>Nothing about an RU/DU implementation, FSMs, timing, back-pressure, or any sequential protocol behaviour. The pass count measures a model, not a design.</div>
+<div class=row><span class=k>Fix before signoff</span>Re-label the deliverable as <b>VIP + reference-model signoff</b>, OR bind the VIP to a real RTL DUT (or a behavioural reference with injected faults) and re-run. Do not present as design signoff.</div>
+</div>
+
+<div class="f blocker">
+<h3><span class="sev blocker">BLOCKER</span>RT-002 &middot; Self-referential pipeline — one source of truth feeds stimulus, DUT, checker AND coverage</h3>
+<div class=row><span class=k>Claim</span><code>spec.json</code> generates the constraint set, the codec, the <code>is_legal</code>/<code>first_violation</code> checker, and the coverage bins. Positive-pass is near-tautological: Z3 emits a legal header; the same spec's checker agrees.</div>
+<div class=row><span class=k>Evidence</span><code>gen/gen_stim.py</code> <code>py_is_legal()</code> is described in-file as "mirror of SV is_legal"; both derive from the same spec. <code>uplane_first_violation()</code> encodes the identical bounds the solver was given.</div>
+<div class=row><span class=k>What 1523 does not prove</span>Independence of stimulus and checking. A conformant generator and a conformant checker built from the same text cannot disagree except on an implementation typo — so agreement is expected, not evidence of correctness.</div>
+<div class=row><span class=k>Fix before signoff</span>Introduce an <b>independent</b> golden (different author/derivation, or the authoritative spec's own vectors) so the checker is not a restatement of the generator.</div>
+</div>
+
+<div class="f high">
+<h3><span class="sev high">HIGH</span>RT-003 &middot; Checker sensitivity is unproven — zero mutation testing, zero bugs ever caught</h3>
+<div class=row><span class=k>Claim</span>The testbench has never caught a defect it did not itself plant, so its power to detect a real, independent bug is unknown.</div>
+<div class=row><span class=k>Evidence</span><code>grep -rIn "BUG-[0-9]"</code> across <code>regression/ lane2/ components/*/sim_out/</code> &rarr; empty. No BUG-### in any ledger.</div>
+<div class=row><span class=k>What 1523 does not prove</span>That a 100% pass rate distinguishes a correct model from a checker that catches nothing. Both produce all-green.</div>
+<div class=row><span class=k>Fix before signoff</span>Run <b>mutation / fault-injection testing</b>: perturb the codec (swap a field slice, off-by-one a bound, drop a cross term) and require the scoreboard to FAIL. Report kill-rate as the real quality metric.</div>
+</div>
+
+<div class="f high">
+<h3><span class="sev high">HIGH</span>RT-004 &middot; The strongest check is a mathematical tautology</h3>
+<div class=row><span class=k>Claim</span>Round-trip (<code>unpack(pack(h)) !== h</code>) can only fire if pack/unpack aren't inverses — it validates the TB's own bit-slicing. Pack-vs-golden compares two implementations of the <i>same</i> layout.</div>
+<div class=row><span class=k>Evidence</span><code>tb/uplane_tb_top.sv</code>: <code>m_wire=pack(m_in); m_out=unpack(m_wire); if(m_out!==m_in) ROUNDTRIP err; if(m_wire!==r_gold) PACK err</code>. Golden <code>r_gold</code> is the Python pack of the same fields.</div>
+<div class=row><span class=k>What 1523 does not prove</span>Any protocol-semantic property (field meaning, ordering, timing). It proves the layout is invertible and two encoders agree.</div>
+<div class=row><span class=k>Fix before signoff</span>Add checks against <b>spec-sourced expected values</b> (decode known-good captures / vendor vectors), not against the suite's own encoder.</div>
+</div>
+
+<div class="f high">
+<h3><span class="sev high">HIGH</span>RT-005 &middot; "Assertions" are procedural counters; the only concurrent SVA is vacuous</h3>
+<div class=row><span class=k>Claim</span>Lane-1 <code>SVA_EXERCISED,...</code> is a count of function calls, not temporal SVA. The one real concurrent-SVA interface (<code>ecpri_if.sv</code>) is transaction-decoupled, so <code>valid</code> never asserts and the properties are vacuous.</div>
+<div class=row><span class=k>Evidence</span><code>tb/*_tb_top.sv</code>: <code>SVA_EXERCISED,legality=%0d,roundtrip=%0d,pack=%0d</code> printed from <code>m_ex_*</code> counters. <code>ecpri_if.sv</code> properties gate on <code>valid</code>; driver publishes to the analysis port and never drives <code>vif</code> (see VCS_PORTABILITY_NOTES).</div>
+<div class=row><span class=k>What 1523 does not prove</span>That any temporal/ordering/handshake invariant was actually evaluated. Vacuous assertions pass unconditionally.</div>
+<div class=row><span class=k>Fix before signoff</span>Wire the interface (NBA @posedge pattern already documented), add a <b>cover</b> per property and fail on vacuity, and add monotonic-<code>seq_id</code> stimulus so <code>p_seq_inc</code> is non-vacuous.</div>
+</div>
+
+<div class="f med">
+<h3><span class="sev med">MED</span>RT-006 &middot; Coverage measures the generator hitting its own bins</h3>
+<div class=row><span class=k>Claim</span>100% functional is over bins the same <code>spec.json</code> defined; it proves the generator reached its own targets, not that the protocol space is adequately sampled. Native covergroup % was never computed on Verilator.</div>
+<div class=row><span class=k>Evidence</span><code>suite_regression_full.json</code>: func_holes total = 0 over self-derived COV-### bins. <code>lane2b_report.json</code>: "Verilator get_coverage not collected"; get_coverage()=0.</div>
+<div class=row><span class=k>What 1523 does not prove</span>Coverage <i>adequacy</i> (are the bins the right ones?), cross-coverage depth, or the true covergroup number.</div>
+<div class=row><span class=k>Fix before signoff</span>Have coverage bins reviewed against the authoritative spec by someone other than the bin author; compute real covergroup % on VCS/Questa/Xcelium.</div>
+</div>
+
+<div class="f med">
+<h3><span class="sev med">MED</span>RT-007 &middot; Code-coverage denominator is trivial (~15 lines); toggle ~44&ndash;61%</h3>
+<div class=row><span class=k>Claim</span>100% statement/branch is over ~15 lines of combinational codec per component — a denominator small enough that 100% carries little assurance. Toggle sits at ~44&ndash;61%.</div>
+<div class=row><span class=k>Evidence</span><code>code_cov.json</code>: line total = 15 per component; toggle e.g. cpri_eth 43.75%, uplane 60.94%.</div>
+<div class=row><span class=k>What 1523 does not prove</span>Structural exercise of any non-trivial logic. There is little logic to cover.</div>
+<div class=row><span class=k>Fix before signoff</span>State code coverage against the <b>real DUT</b> once bound; treat the current number as model-integrity only.</div>
+</div>
+
+<div class="f med">
+<h3><span class="sev med">MED</span>RT-008 &middot; Requirements DERIVED, authoritative spec revision unpinned</h3>
+<div class=row><span class=k>Claim</span>Field bounds, enums and cross-constraints are DERIVED, not reconciled to a pinned O-RAN.WG4.CUS revision. Model-to-spec fidelity is unmeasured.</div>
+<div class=row><span class=k>Evidence</span>GAP-ORAN-001 (open) in tracker/VRD; GATE-0 marked DERIVED.</div>
+<div class=row><span class=k>What 1523 does not prove</span>That the modelled legal space equals the spec's legal space. A wrong bound would be enforced consistently by generator and checker and still show 100%.</div>
+<div class=row><span class=k>Fix before signoff</span>Pin CUS R004-v16 (or current), diff every field/enum/cross against clause text, resolve GAP-ORAN-001.</div>
+</div>
+
+<div class="f low">
+<h3><span class="sev low">MED&ndash;LOW</span>RT-009 &middot; One simulator actually ran; commercial path never compiled</h3>
+<div class=row><span class=k>Claim</span>All PASS evidence is Verilator. VCS/Questa/Xcelium are NOT_RUN; the double-UVM defect (now fixed) means the native-UVM path had never compiled on a commercial sim.</div>
+<div class=row><span class=k>Evidence</span>portability matrix (NOT_RUN); VCS_PORTABILITY_NOTES (double-UVM root cause, run pending).</div>
+<div class=row><span class=k>What 1523 does not prove</span>Simulator-independence, or that the UVM elaborates on a vendor tool.</div>
+<div class=row><span class=k>Fix before signoff</span>Run <code>./run_commercial.sh vcs all 1</code> on a licensed host; record real logs; close the portability row.</div>
+</div>
+
+<div class="f low">
+<h3><span class="sev low">LOW</span>RT-010 &middot; Header-only scope; behavioural protocol layers excluded</h3>
+<div class=row><span class=k>Claim</span>Timing servo (T12/T34), beam-weight math, compression SNR, PTP servo/holdover, concatenation reassembly, per-symbol ordering are explicitly out of scope.</div>
+<div class=row><span class=k>Evidence</span>FUNCTIONAL_DESIGN &sect;5 "Out of Scope".</div>
+<div class=row><span class=k>What 1523 does not prove</span>Any dynamic/behavioural conformance — only static header field legality.</div>
+<div class=row><span class=k>Fix before signoff</span>Scope the signoff statement to "protocol-header transaction level"; list behavioural layers as explicit non-goals.</div>
+</div>
+
+<h2>Required before the word "signoff" is used for design intent</h2>
+<table><thead><tr><th>#</th><th>Gate</th><th>Why it changes the conclusion</th></tr></thead><tbody>
+<tr><td>1</td><td>Bind a real RTL DUT (or fault-injected behavioural reference)</td><td>Turns a model self-test into design verification (RT-001).</td></tr>
+<tr><td>2</td><td>Mutation testing with reported kill-rate</td><td>Proves the checkers can fail — the single most important missing number (RT-003).</td></tr>
+<tr><td>3</td><td>Independent golden / spec-sourced vectors</td><td>Breaks the generator=checker circularity (RT-002, RT-004).</td></tr>
+<tr><td>4</td><td>Non-vacuous SVA + vacuity covers</td><td>Makes assertions actually check behaviour (RT-005).</td></tr>
+<tr><td>5</td><td>Pin CUS revision, diff model vs clause</td><td>Establishes model-to-spec fidelity (RT-008).</td></tr>
+<tr><td>6</td><td>Commercial-sim run + real covergroup %</td><td>Simulator independence and true coverage (RT-006, RT-009).</td></tr>
+</tbody></table>
+
+<div class=foot>
+Evidence base (all file:line-verified this audit): <span class=pill>components/&lt;slug&gt;/rtl/*_codec.sv</span> <span class=pill>components/&lt;slug&gt;/tb/*_tb_top.sv</span>
+<span class=pill>gen/gen_stim.py</span> <span class=pill>regression/code_cov.json</span> <span class=pill>regression/suite_regression_full.json</span>
+<span class=pill>lane2/ral, lane2/lane2b_native, ecpri_if.sv</span>. Verdicts: RT-001..010 CONFIRMED against source.
+This red-team does not retract the 1523/1523 result — it bounds its meaning. &middot; AVIK VIP FACTORY — O-RAN VIP Suite.
+</div>
+</div></body></html>

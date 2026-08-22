@@ -1,0 +1,59 @@
+COVROW,method=0,comp_width=10,seq=0
+COVROW,method=0,comp_width=15,seq=117
+COVROW,method=0,comp_width=9,seq=0
+COVROW,method=2,comp_width=9,seq=118
+COVROW,method=2,comp_width=9,seq=151
+COVROW,method=2,comp_width=15,seq=0
+COVROW,method=2,comp_width=9,seq=187
+COVROW,method=2,comp_width=14,seq=201
+COVROW,method=2,comp_width=9,seq=0
+COVROW,method=0,comp_width=12,seq=180
+COVROW,method=1,comp_width=9,seq=105
+COVROW,method=0,comp_width=14,seq=0
+COVROW,method=1,comp_width=14,seq=90
+COVROW,method=1,comp_width=13,seq=231
+COVROW,method=1,comp_width=13,seq=85
+COVROW,method=1,comp_width=13,seq=254
+COVROW,method=0,comp_width=14,seq=0
+COVROW,method=0,comp_width=9,seq=82
+COVROW,method=2,comp_width=9,seq=15
+COVROW,method=2,comp_width=15,seq=24
+COVROW,method=0,comp_width=13,seq=4
+COVROW,method=0,comp_width=13,seq=19
+COVROW,method=1,comp_width=15,seq=199
+COVROW,method=1,comp_width=15,seq=0
+COVROW,method=1,comp_width=14,seq=0
+COVROW,method=1,comp_width=14,seq=43
+COVROW,method=1,comp_width=12,seq=130
+COVROW,method=1,comp_width=12,seq=53
+COVROW,method=1,comp_width=12,seq=193
+COVROW,method=2,comp_width=12,seq=58
+COVROW,method=1,comp_width=12,seq=46
+COVROW,method=0,comp_width=15,seq=81
+COVROW,method=0,comp_width=15,seq=244
+COVROW,method=0,comp_width=9,seq=230
+COVROW,method=1,comp_width=9,seq=240
+COVROW,method=1,comp_width=12,seq=143
+COVROW,method=1,comp_width=12,seq=167
+COVROW,method=1,comp_width=13,seq=47
+COVROW,method=1,comp_width=15,seq=5
+COVROW,method=1,comp_width=11,seq=88
+COVROW,method=1,comp_width=14,seq=72
+COVROW,method=2,comp_width=14,seq=80
+COVROW,method=2,comp_width=10,seq=128
+COVROW,method=2,comp_width=10,seq=0
+COVROW,method=0,comp_width=14,seq=141
+COVROW,method=1,comp_width=10,seq=0
+COVROW,method=2,comp_width=12,seq=211
+COVROW,method=2,comp_width=12,seq=188
+COVROW,method=0,comp_width=12,seq=237
+COVROW,method=0,comp_width=15,seq=26
+SBSUMMARY,txns=50,legal_err=0,pack_err=0,rt_err=0
+SVA_EXERCISED,legality=50,roundtrip=50,pack=50
+--- UVM Report Summary ---
+UVM_INFO :  50
+UVM_WARNING : 0
+UVM_ERROR : 0
+UVM_FATAL : 0
+** TEST PASSED **
+- /home/claude/oran_vip_suite/components/compression/tb/compression_tb_top.sv:61: Verilog $finish

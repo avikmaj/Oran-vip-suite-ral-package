@@ -1,0 +1,98 @@
+{
+  "lane": "2B_native_uvm",
+  "sim": "Verilator 5.050",
+  "components": {
+    "ecpri_transport": {
+      "status": "PASS",
+      "txns": 100,
+      "native_covergroup": "sampled (illegal_bins empty); Verilator get_coverage not collected"
+    },
+    "cpri_eth": {
+      "status": "PASS",
+      "txns": 100,
+      "native_covergroup": "sampled (illegal_bins empty); Verilator get_coverage not collected"
+    },
+    "uplane": {
+      "status": "PASS",
+      "txns": 100,
+      "native_covergroup": "sampled (illegal_bins empty); Verilator get_coverage not collected"
+    },
+    "cplane": {
+      "status": "PASS",
+      "txns": 100,
+      "native_covergroup": "sampled (illegal_bins empty); Verilator get_coverage not collected"
+    },
+    "splane": {
+      "status": "PASS",
+      "txns": 100,
+      "native_covergroup": "sampled (illegal_bins empty); Verilator get_coverage not collected"
+    },
+    "mplane": {
+      "status": "PASS",
+      "txns": 100,
+      "native_covergroup": "sampled (illegal_bins empty); Verilator get_coverage not collected"
+    },
+    "beamforming": {
+      "status": "PASS",
+      "txns": 100,
+      "native_covergroup": "sampled (illegal_bins empty); Verilator get_coverage not collected"
+    },
+    "compression": {
+      "status": "PASS",
+      "txns": 100,
+      "native_covergroup": "sampled (illegal_bins empty); Verilator get_coverage not collected"
+    },
+    "prach": {
+      "status": "PASS",
+      "txns": 100,
+      "native_covergroup": "sampled (illegal_bins empty); Verilator get_coverage not collected"
+    },
+    "mimo_massive": {
+      "status": "PASS",
+      "txns": 100,
+      "native_covergroup": "sampled (illegal_bins empty); Verilator get_coverage not collected"
+    },
+    "bwp": {
+      "status": "PASS",
+      "txns": 100,
+      "native_covergroup": "sampled (illegal_bins empty); Verilator get_coverage not collected"
+    },
+    "mmwave": {
+      "status": "PASS",
+      "txns": 100,
+      "native_covergroup": "sampled (illegal_bins empty); Verilator get_coverage not collected"
+    },
+    "laa": {
+      "status": "PASS",
+      "txns": 100,
+      "native_covergroup": "sampled (illegal_bins empty); Verilator get_coverage not collected"
+    }
+  },
+  "summary": "13/13 PASS",
+  "note": "Native covergroup parses+samples on Verilator 5.050 but get_coverage() returns 0 (Verilator limitation); real covergroup % on VCS/Questa/Xcelium. Protocol functional coverage = 100% on identical bins via Lane-1/2A Python engine.",
+  "ral": {
+    "test": "oran_ral_test",
+    "lane": "2b_native_uvm",
+    "simulator": "Verilator 5.050 (source-built) + Accellera UVM",
+    "seed": 1,
+    "sim_exit": 0,
+    "register_ops": 163,
+    "reg_errors": 0,
+    "uvm_error": 0,
+    "uvm_fatal": 0,
+    "registers": [
+      "ru_ctrl_reg@0x00 RW",
+      "ru_version_reg@0x04 RO",
+      "ru_numant_reg@0x08 RW",
+      "ru_comp_reg@0x0C RW",
+      "ru_bwp_reg@0x10 RW"
+    ],
+    "checks": [
+      "reset-value mirror",
+      "RO version read-back",
+      "20x RW randomize/update/read/mirror-compare",
+      "RO write-protect"
+    ],
+    "STATUS": "PASS"
+  }
+}

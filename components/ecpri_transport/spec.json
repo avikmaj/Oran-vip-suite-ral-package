@@ -1,0 +1,144 @@
+{
+  "slug": "ecpri_transport",
+  "spec_ref": "eCPRI v2.0 \u00a73.1 common header + \u00a73.2 Type-0 IQ",
+  "fields": [
+    {
+      "name": "version",
+      "w": 4,
+      "legal": {
+        "const": 1
+      }
+    },
+    {
+      "name": "rsvd",
+      "w": 3,
+      "legal": {
+        "const": 0
+      }
+    },
+    {
+      "name": "concat",
+      "w": 1,
+      "legal": {
+        "range": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "name": "msg_type",
+      "w": 8,
+      "legal": {
+        "range": [
+          0,
+          7
+        ]
+      }
+    },
+    {
+      "name": "payload_size",
+      "w": 16,
+      "legal": {
+        "range": [
+          8,
+          1024
+        ]
+      }
+    },
+    {
+      "name": "pc_id",
+      "w": 16,
+      "legal": {
+        "range": [
+          0,
+          65535
+        ]
+      }
+    },
+    {
+      "name": "seq_id",
+      "w": 8,
+      "legal": {
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "e_bit",
+      "w": 1,
+      "legal": {
+        "range": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "name": "sub_seq",
+      "w": 7,
+      "legal": {
+        "range": [
+          0,
+          127
+        ]
+      }
+    }
+  ],
+  "cross": [],
+  "cover": [
+    {
+      "id": "COV-003",
+      "field": "concat",
+      "kind": "bool",
+      "args": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "COV-004",
+      "field": "msg_type",
+      "kind": "enum",
+      "args": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "COV-005",
+      "field": "payload_size",
+      "kind": "bucket4",
+      "args": [
+        8,
+        1024
+      ]
+    },
+    {
+      "id": "COV-007",
+      "field": "seq_id",
+      "kind": "wrap",
+      "args": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "COV-008",
+      "field": "e_bit",
+      "kind": "bool",
+      "args": [
+        0,
+        1
+      ]
+    }
+  ]
+}

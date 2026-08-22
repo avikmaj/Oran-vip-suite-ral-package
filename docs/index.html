@@ -1,0 +1,87 @@
+<!doctype html><html lang=en><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>O-RAN VIP Suite — Reports</title>
+<style>
+:root{--ink:#16232e;--brand:#0f3350;--gold:#a8811f;--line:#e5eaed;--good:#1f8f4e;--warn:#d98324}
+*{box-sizing:border-box}
+body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#eef1f4;color:var(--ink)}
+.wrap{max-width:1000px;margin:0 auto;padding:26px 20px 70px}
+header{background:linear-gradient(135deg,#0f3350,#1c5580);color:#fff;border-radius:14px;padding:24px 28px;box-shadow:0 3px 12px rgba(0,0,0,.18);border-top:5px solid var(--gold)}
+header h1{margin:0 0 6px;font-size:24px} header .m{opacity:.9;font-size:13px;line-height:1.55}
+.badges{margin:12px 0 2px} .badges img{height:20px;margin:3px 5px 3px 0;vertical-align:middle}
+.kpis{display:flex;flex-wrap:wrap;gap:11px;margin:16px 0}
+.kpi{flex:1 1 150px;background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 4px rgba(0,0,0,.1)}
+.kpi b{display:block;font-size:22px;color:var(--good)} .kpi span{font-size:11px;color:#5c6a77}
+h2{font-size:16px;color:var(--brand);border-left:5px solid var(--brand);padding-left:10px;margin:26px 0 10px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+a.card{display:block;background:#fff;border-radius:12px;padding:16px 18px;text-decoration:none;color:inherit;box-shadow:0 1px 5px rgba(0,0,0,.09);border-left:4px solid var(--brand);transition:transform .08s,box-shadow .08s}
+a.card:hover{transform:translateY(-2px);box-shadow:0 4px 14px rgba(0,0,0,.14)}
+a.card.gold{border-left-color:var(--gold)} a.card.warn{border-left-color:var(--warn)}
+a.card b{font-size:14.5px;color:var(--brand);display:block;margin-bottom:3px}
+a.card span{font-size:12px;color:#5c6a77;line-height:1.45}
+.tag{font-size:10px;padding:1px 6px;border-radius:4px;background:#eef3f7;color:#0f3350;border:1px solid #d5e0e8;margin-right:4px}
+.scope{background:#fff;border-left:6px solid var(--gold);border-radius:10px;padding:13px 16px;margin:14px 0;font-size:12.5px;line-height:1.55;box-shadow:0 1px 5px rgba(0,0,0,.08)}
+.foot{font-size:11px;color:#6b7883;margin-top:22px;border-top:1px solid var(--line);padding-top:12px}
+.foot a{color:var(--brand)}
+</style></head><body><div class=wrap>
+<header>
+<h1>O-RAN VIP Suite — Verification Reports</h1>
+<div class=m>Author: AVIK MAJUMDAR · AVIK VIP FACTORY · 13 components (4G CPRI-over-Eth + 5G NR eCPRI Split 7.2x) + uvm_reg RAL · Verilator 5.020/5.050 + Accellera UVM</div>
+<div class=badges>
+<img alt=regression src="https://img.shields.io/badge/regression-1536%2F1536%20(100%25)-brightgreen">
+<img alt=mutation src="https://img.shields.io/badge/mutation%20kill--rate-94.4%25%20%E2%86%92%20100%25%20reachable-brightgreen">
+<img alt=coverage src="https://img.shields.io/badge/functional%20%2F%20code-100%25%20%2F%20100%25-brightgreen">
+<img alt=signoff src="https://img.shields.io/badge/signoff-bounded%20(VIP%2Fmodel)-orange">
+</div>
+</header>
+
+<div class=kpis>
+<div class=kpi><b>1536/1536</b><span>executed regression, 100% pass</span></div>
+<div class=kpi><b>94.4% → 100%</b><span>mutation kill-rate (shipped → reachable)</span></div>
+<div class=kpi><b>100% / 100%</b><span>functional / code-stmt coverage</span></div>
+<div class=kpi><b>13 + RAL</b><span>components verified</span></div>
+</div>
+
+<div class=scope>
+<b>Signoff scope:</b> VIP / protocol reference-model integrity (bounded) — <b>not</b> an RTL design signoff. The
+block-under-test is a combinational header codec, not sequential RU RTL. Binding a real RTL DUT, pinning the
+authoritative O-RAN.WG4.CUS revision, and a commercial-simulator run remain the prerequisites for a <i>design</i>
+signoff. Every reported STATUS derives from executed simulator evidence — none is inferred.
+</div>
+
+<h2>Signoff &amp; adversarial review</h2>
+<div class=cards>
+<a class="card gold" href="ORAN_VIP_SIGNOFF_CERTIFICATE.html"><b>Signoff Certificate (bounded)</b><span>Scope, executed evidence, mutation kill-rate, and disposition of every red-team finding.</span></a>
+<a class="card warn" href="RED_TEAM_ORAN_SIGNOFF.html"><b>Red-Team of the Signoff</b><span>What 1536/1536 does <i>not</i> prove — 10 findings, verified file:line against source.</span></a>
+</div>
+
+<h2>Regression &amp; coverage</h2>
+<div class=cards>
+<a class="card" href="FINAL_REGRESSION_COVERAGE_REPORT.html"><b>Final Regression &amp; Coverage Report</b><span>Per-lane + per-component results, test-class breakdown, GATE-8 coverage, portability.</span></a>
+<a class="card" href="COVERAGE_DASHBOARD.html"><b>Coverage &amp; Regression Dashboard</b><span>Multi-lane dashboard (Lane-1 / 2A / 2B + RAL) with functional and code-coverage bars.</span></a>
+<a class="card" href="TEST_PLAN_AND_COVERAGE.html"><b>Detailed Test Plan (vplan)</b><span>Per-component features/FR, test scenarios, coverage bins, checkers, traceability.</span></a>
+</div>
+
+<h2>Methodology &amp; reference</h2>
+<div class=cards>
+<a class="card" href="pdf/VCS_PORTABILITY_NOTES.pdf"><b>VCS Portability &amp; Scheduling Notes (PDF)</b><span>Vendor-UVM filelist split (no double-UVM), sampling-race analysis, harness status.</span></a>
+</div>
+<div class=scope style="border-left-color:var(--brand)">
+Additional detailed documents ship as A4 PDFs under <span class=tag>docs/pdf/</span> in the repository:
+Verification Reference (VRD), Functional Design (FD), Integration Guide, Full Regression / Coverage reports,
+Cross-Simulator &amp; UVM README, Architecture, and Suite Guide.
+</div>
+
+<h2>Reproduce</h2>
+<div class=scope style="border-left-color:var(--brand);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px">
+make verilator050 &amp;&amp; make uvm-setup &amp;&amp; make regress &nbsp;# 1536/1536<br>
+make coverage &nbsp;# functional + code + HTML dashboard + reports<br>
+make mutation &nbsp;# RT-003 fault-injection kill-rate<br>
+make isoneg &nbsp;&nbsp;&nbsp;# isolated-negative regression (each reachable check independently)
+</div>
+
+<div class=foot>
+Repository: <a href="https://github.com/avikmaj/Oran-vip-suite-ral-package">github.com/avikmaj/Oran-vip-suite-ral-package</a>
+· Evidence: regression/*.json · AVIK VIP FACTORY — O-RAN VIP Suite.
+</div>
+</div></body></html>

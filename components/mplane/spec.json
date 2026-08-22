@@ -1,0 +1,127 @@
+{
+  "slug": "mplane",
+  "spec_ref": "O-RAN.WG4.MP M-plane NETCONF/YANG O1",
+  "fields": [
+    {
+      "name": "version",
+      "w": 4,
+      "legal": {
+        "const": 1
+      }
+    },
+    {
+      "name": "netconf_op",
+      "w": 3,
+      "legal": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "name": "datastore",
+      "w": 2,
+      "legal": {
+        "enum": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "name": "item_id",
+      "w": 16,
+      "legal": {
+        "range": [
+          0,
+          65535
+        ]
+      }
+    },
+    {
+      "name": "ant_cal",
+      "w": 1,
+      "legal": {
+        "range": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "name": "sw_slot",
+      "w": 3,
+      "legal": {
+        "range": [
+          0,
+          7
+        ]
+      }
+    },
+    {
+      "name": "seq",
+      "w": 8,
+      "legal": {
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "rsvd",
+      "w": 27,
+      "legal": {
+        "const": 0
+      }
+    }
+  ],
+  "cross": [],
+  "cover": [
+    {
+      "id": "COV-002",
+      "field": "netconf_op",
+      "kind": "enum",
+      "args": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "COV-003",
+      "field": "datastore",
+      "kind": "enum",
+      "args": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "COV-005",
+      "field": "ant_cal",
+      "kind": "bool",
+      "args": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "COV-007",
+      "field": "seq",
+      "kind": "wrap",
+      "args": [
+        0,
+        255
+      ]
+    }
+  ]
+}

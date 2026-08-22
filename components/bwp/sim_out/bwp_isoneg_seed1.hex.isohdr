@@ -1,0 +1,26 @@
+{
+ "isolable": [
+  "CONST_version",
+  "RANGE_numerology",
+  "ENUM_bw_mhz",
+  "CONST_rsvd"
+ ],
+ "non_isolable": [
+  [
+   "RANGE_bwp_id",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_fr",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_active",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_seq",
+   "unsat-dead-or-coupled"
+  ]
+ ]
+}

@@ -1,0 +1,119 @@
+{
+  "ecpri_transport": {
+    "build": "PASS",
+    "gate3_uvm": "PASS",
+    "seeds": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "cpri_eth": {
+    "build": "PASS",
+    "gate3_uvm": "PASS",
+    "seeds": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "uplane": {
+    "build": "PASS",
+    "gate3_uvm": "PASS",
+    "seeds": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "cplane": {
+    "build": "PASS",
+    "gate3_uvm": "PASS",
+    "seeds": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "splane": {
+    "build": "PASS",
+    "gate3_uvm": "PASS",
+    "seeds": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "mplane": {
+    "build": "PASS",
+    "gate3_uvm": "PASS",
+    "seeds": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "beamforming": {
+    "build": "PASS",
+    "gate3_uvm": "PASS",
+    "seeds": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "compression": {
+    "build": "PASS",
+    "gate3_uvm": "PASS",
+    "seeds": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "prach": {
+    "build": "PASS",
+    "gate3_uvm": "PASS",
+    "seeds": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "mimo_massive": {
+    "build": "PASS",
+    "gate3_uvm": "PASS",
+    "seeds": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "bwp": {
+    "build": "PASS",
+    "gate3_uvm": "PASS",
+    "seeds": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "mmwave": {
+    "build": "PASS",
+    "gate3_uvm": "PASS",
+    "seeds": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "laa": {
+    "build": "PASS",
+    "gate3_uvm": "PASS",
+    "seeds": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  }
+}

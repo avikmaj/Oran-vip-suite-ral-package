@@ -1,0 +1,1 @@
+{"lane":2,"tier":"2B_native_uvm","status":"NOT_VERIFIED","reason":"no UVM-capable simulator in sandbox; requires DSim/VCS/Questa/Xcelium venue","sim":"none","components":13}

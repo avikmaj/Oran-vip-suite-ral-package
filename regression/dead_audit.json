@@ -1,0 +1,109 @@
+{
+  "audited": 9,
+  "components": {
+    "ecpri_transport": [
+      {
+        "code": "RANGE_concat",
+        "verdict": "TRUE_DEAD",
+        "true_dead": true,
+        "isolable_sat": false,
+        "note": "legal-set 2 == 2^1 (2); no illegal encoding exists",
+        "width_contingent": true,
+        "op": "LEGAL_RANGE_DROP"
+      }
+    ],
+    "cpri_eth": [
+      {
+        "code": "RANGE_direction",
+        "verdict": "TRUE_DEAD",
+        "true_dead": true,
+        "isolable_sat": false,
+        "note": "legal-set 2 == 2^1 (2); no illegal encoding exists",
+        "width_contingent": true,
+        "op": "LEGAL_RANGE_DROP"
+      }
+    ],
+    "splane": [
+      {
+        "code": "RANGE_seq",
+        "verdict": "TRUE_DEAD",
+        "true_dead": true,
+        "isolable_sat": false,
+        "note": "legal-set 65536 == 2^16 (65536); no illegal encoding exists",
+        "width_contingent": true,
+        "op": "LEGAL_RANGE_DROP"
+      }
+    ],
+    "mplane": [
+      {
+        "code": "RANGE_item_id",
+        "verdict": "TRUE_DEAD",
+        "true_dead": true,
+        "isolable_sat": false,
+        "note": "legal-set 65536 == 2^16 (65536); no illegal encoding exists",
+        "width_contingent": true,
+        "op": "LEGAL_RANGE_DROP"
+      }
+    ],
+    "beamforming": [
+      {
+        "code": "RANGE_beam_id",
+        "verdict": "TRUE_DEAD",
+        "true_dead": true,
+        "isolable_sat": false,
+        "note": "legal-set 65536 == 2^16 (65536); no illegal encoding exists",
+        "width_contingent": true,
+        "op": "LEGAL_RANGE_DROP"
+      }
+    ],
+    "compression": [
+      {
+        "code": "RANGE_exponent",
+        "verdict": "TRUE_DEAD",
+        "true_dead": true,
+        "isolable_sat": false,
+        "note": "legal-set 16 == 2^4 (16); no illegal encoding exists",
+        "width_contingent": true,
+        "op": "LEGAL_RANGE_DROP"
+      },
+      {
+        "code": "CROSS_0",
+        "verdict": "MASKED_EQUIVALENT",
+        "true_dead": false,
+        "isolable_sat": false,
+        "note": "cross[0]: comp_width <= iq_width",
+        "width_contingent": false,
+        "op": "LEGAL_CROSS_DROP"
+      }
+    ],
+    "bwp": [
+      {
+        "code": "RANGE_bwp_id",
+        "verdict": "TRUE_DEAD",
+        "true_dead": true,
+        "isolable_sat": false,
+        "note": "legal-set 4 == 2^2 (4); no illegal encoding exists",
+        "width_contingent": true,
+        "op": "LEGAL_RANGE_DROP"
+      }
+    ],
+    "laa": [
+      {
+        "code": "RANGE_lbt_result",
+        "verdict": "TRUE_DEAD",
+        "true_dead": true,
+        "isolable_sat": false,
+        "note": "legal-set 2 == 2^1 (2); no illegal encoding exists",
+        "width_contingent": true,
+        "op": "LEGAL_RANGE_DROP"
+      }
+    ]
+  },
+  "verdicts": {
+    "TRUE_DEAD": 8,
+    "MASKED_EQUIVALENT": 1,
+    "MISCLASSIFIED": 0
+  },
+  "result": "CLEAN",
+  "note": "All EQUIVALENT_DEAD exclusions independently re-proven: every excluded mutant is either TRUE_DEAD (no illegal encoding at current width) or MASKED_EQUIVALENT (all violations co-trigger a still-present check). TRUE_DEAD verdicts are width-contingent and MUST be re-audited on a CUS revision pin (GAP-ORAN-001)."
+}

@@ -1,0 +1,30 @@
+{
+ "isolable": [
+  "CONST_version",
+  "CONST_rsvd",
+  "RANGE_msg_type",
+  "RANGE_payload_size"
+ ],
+ "non_isolable": [
+  [
+   "RANGE_concat",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_pc_id",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_seq_id",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_e_bit",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_sub_seq",
+   "unsat-dead-or-coupled"
+  ]
+ ]
+}

@@ -1,0 +1,15 @@
+EXPECTED_FAILURE_DETECTED: CONST_version
+EXPECTED_FAILURE_DETECTED: CONST_section_type
+EXPECTED_FAILURE_DETECTED: ENUM_format
+EXPECTED_FAILURE_DETECTED: RANGE_numerology
+EXPECTED_FAILURE_DETECTED: CONST_rsvd
+SBSUMMARY,txns=300,legal_err=0,pack_err=0,rt_err=0
+SVA_EXERCISED,legality=300,roundtrip=300,pack=300
+NEGSUMMARY,expected=300,unexpected=0
+--- UVM Report Summary ---
+UVM_INFO :  300
+UVM_WARNING : 0
+UVM_ERROR : 0
+UVM_FATAL : 0
+** TEST PASSED **
+- /home/claude/oran_vip_suite/components/prach/tb/prach_tb_top.sv:70: Verilog $finish

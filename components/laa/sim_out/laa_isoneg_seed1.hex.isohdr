@@ -1,0 +1,27 @@
+{
+ "isolable": [
+  "CONST_version",
+  "CONST_section_type",
+  "ENUM_lbt_cat",
+  "CONST_section_ext",
+  "CONST_rsvd"
+ ],
+ "non_isolable": [
+  [
+   "RANGE_lbt_result",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_burst_type",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_cap",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_seq",
+   "unsat-dead-or-coupled"
+  ]
+ ]
+}

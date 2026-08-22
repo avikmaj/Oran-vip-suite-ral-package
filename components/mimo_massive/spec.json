@@ -1,0 +1,128 @@
+{
+  "slug": "mimo_massive",
+  "spec_ref": "O-RAN.WG4.CUS Sect Ext 5/6 + 3GPP massive MIMO 64T64R",
+  "fields": [
+    {
+      "name": "version",
+      "w": 4,
+      "legal": {
+        "const": 1
+      }
+    },
+    {
+      "name": "ant_cfg",
+      "w": 8,
+      "legal": {
+        "enum": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64
+        ]
+      }
+    },
+    {
+      "name": "num_layers",
+      "w": 4,
+      "legal": {
+        "range": [
+          1,
+          8
+        ]
+      }
+    },
+    {
+      "name": "tdd_cfg",
+      "w": 3,
+      "legal": {
+        "range": [
+          0,
+          6
+        ]
+      }
+    },
+    {
+      "name": "rank",
+      "w": 4,
+      "legal": {
+        "range": [
+          1,
+          8
+        ]
+      }
+    },
+    {
+      "name": "precoder_idx",
+      "w": 8,
+      "legal": {
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "seq",
+      "w": 8,
+      "legal": {
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "rsvd",
+      "w": 25,
+      "legal": {
+        "const": 0
+      }
+    }
+  ],
+  "cross": [
+    "num_layers <= ant_cfg",
+    "rank <= num_layers"
+  ],
+  "cover": [
+    {
+      "id": "COV-002",
+      "field": "ant_cfg",
+      "kind": "enum",
+      "args": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ]
+    },
+    {
+      "id": "COV-004",
+      "field": "tdd_cfg",
+      "kind": "enum",
+      "args": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "COV-007",
+      "field": "seq",
+      "kind": "wrap",
+      "args": [
+        0,
+        255
+      ]
+    }
+  ]
+}

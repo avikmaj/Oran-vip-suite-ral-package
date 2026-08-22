@@ -1,0 +1,1252 @@
+{
+  "components": {
+    "ecpri_transport": {
+      "baseline_ok": true,
+      "baseline": {
+        "pos": "PASS",
+        "neg": "EXPECTED_FAILURE_DETECTED",
+        "iso": "EXPECTED_FAILURE_DETECTED"
+      },
+      "dead_checks": [
+        "RANGE_concat",
+        "RANGE_e_bit",
+        "RANGE_pc_id",
+        "RANGE_seq_id",
+        "RANGE_sub_seq"
+      ],
+      "valid": 4,
+      "kill_base": 4,
+      "kill_iso": 4,
+      "equivalent_dead": 1,
+      "kill_rate_base": 100.0,
+      "kill_rate_iso": 100.0,
+      "open_survivors": [],
+      "detail": [
+        {
+          "op": "PACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "PACK_FIELD_ZERO",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "UNPACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "LEGAL_CONST_DROP",
+          "dropped": "CONST_version",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_RANGE_DROP",
+          "dropped": "RANGE_concat",
+          "pos": "PASS",
+          "neg": "EXPECTED_FAILURE_DETECTED",
+          "iso": "EXPECTED_FAILURE_DETECTED",
+          "kill_base": false,
+          "kill_iso": false,
+          "disposition": "EQUIVALENT_DEAD",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_ENUM_DROP",
+          "applicable": false
+        },
+        {
+          "op": "LEGAL_CROSS_DROP",
+          "applicable": false
+        }
+      ]
+    },
+    "cpri_eth": {
+      "baseline_ok": true,
+      "baseline": {
+        "pos": "PASS",
+        "neg": "EXPECTED_FAILURE_DETECTED",
+        "iso": "EXPECTED_FAILURE_DETECTED"
+      },
+      "dead_checks": [
+        "RANGE_cm_flag",
+        "RANGE_direction",
+        "RANGE_frame_id",
+        "RANGE_iq_rate_id",
+        "RANGE_seq"
+      ],
+      "valid": 5,
+      "kill_base": 5,
+      "kill_iso": 5,
+      "equivalent_dead": 1,
+      "kill_rate_base": 100.0,
+      "kill_rate_iso": 100.0,
+      "open_survivors": [],
+      "detail": [
+        {
+          "op": "PACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "PACK_FIELD_ZERO",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "UNPACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "LEGAL_CONST_DROP",
+          "dropped": "CONST_version",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_RANGE_DROP",
+          "dropped": "RANGE_direction",
+          "pos": "PASS",
+          "neg": "EXPECTED_FAILURE_DETECTED",
+          "iso": "EXPECTED_FAILURE_DETECTED",
+          "kill_base": false,
+          "kill_iso": false,
+          "disposition": "EQUIVALENT_DEAD",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_ENUM_DROP",
+          "dropped": "ENUM_bw_profile",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_CROSS_DROP",
+          "applicable": false
+        }
+      ]
+    },
+    "uplane": {
+      "baseline_ok": true,
+      "baseline": {
+        "pos": "PASS",
+        "neg": "EXPECTED_FAILURE_DETECTED",
+        "iso": "EXPECTED_FAILURE_DETECTED"
+      },
+      "dead_checks": [
+        "ENUM_comp_type",
+        "RANGE_seq"
+      ],
+      "valid": 7,
+      "kill_base": 6,
+      "kill_iso": 7,
+      "equivalent_dead": 0,
+      "kill_rate_base": 85.7,
+      "kill_rate_iso": 100.0,
+      "open_survivors": [],
+      "detail": [
+        {
+          "op": "PACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "PACK_FIELD_ZERO",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "UNPACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "LEGAL_CONST_DROP",
+          "dropped": "CONST_version",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_RANGE_DROP",
+          "dropped": "RANGE_numerology",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_ENUM_DROP",
+          "dropped": "ENUM_section_type",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_CROSS_DROP",
+          "dropped": "CROSS_0",
+          "pos": "PASS",
+          "neg": "EXPECTED_FAILURE_DETECTED",
+          "iso": "FAIL",
+          "kill_base": false,
+          "kill_iso": true,
+          "disposition": "KILLED_BY_ISOLATION",
+          "expected_killer": "neg"
+        }
+      ]
+    },
+    "cplane": {
+      "baseline_ok": true,
+      "baseline": {
+        "pos": "PASS",
+        "neg": "EXPECTED_FAILURE_DETECTED",
+        "iso": "EXPECTED_FAILURE_DETECTED"
+      },
+      "dead_checks": [
+        "RANGE_beam_id",
+        "RANGE_seq",
+        "RANGE_start_symbol"
+      ],
+      "valid": 7,
+      "kill_base": 6,
+      "kill_iso": 7,
+      "equivalent_dead": 0,
+      "kill_rate_base": 85.7,
+      "kill_rate_iso": 100.0,
+      "open_survivors": [],
+      "detail": [
+        {
+          "op": "PACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "PACK_FIELD_ZERO",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "UNPACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "LEGAL_CONST_DROP",
+          "dropped": "CONST_version",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_RANGE_DROP",
+          "dropped": "RANGE_section_type",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_ENUM_DROP",
+          "dropped": "ENUM_num_sections",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_CROSS_DROP",
+          "dropped": "CROSS_0",
+          "pos": "PASS",
+          "neg": "EXPECTED_FAILURE_DETECTED",
+          "iso": "FAIL",
+          "kill_base": false,
+          "kill_iso": true,
+          "disposition": "KILLED_BY_ISOLATION",
+          "expected_killer": "neg"
+        }
+      ]
+    },
+    "splane": {
+      "baseline_ok": true,
+      "baseline": {
+        "pos": "PASS",
+        "neg": "EXPECTED_FAILURE_DETECTED",
+        "iso": "EXPECTED_FAILURE_DETECTED"
+      },
+      "dead_checks": [
+        "ENUM_clock_state",
+        "RANGE_holdover",
+        "RANGE_seq"
+      ],
+      "valid": 5,
+      "kill_base": 5,
+      "kill_iso": 5,
+      "equivalent_dead": 1,
+      "kill_rate_base": 100.0,
+      "kill_rate_iso": 100.0,
+      "open_survivors": [],
+      "detail": [
+        {
+          "op": "PACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "PACK_FIELD_ZERO",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "UNPACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "LEGAL_CONST_DROP",
+          "dropped": "CONST_version",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_RANGE_DROP",
+          "dropped": "RANGE_seq",
+          "pos": "PASS",
+          "neg": "EXPECTED_FAILURE_DETECTED",
+          "iso": "EXPECTED_FAILURE_DETECTED",
+          "kill_base": false,
+          "kill_iso": false,
+          "disposition": "EQUIVALENT_DEAD",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_ENUM_DROP",
+          "dropped": "ENUM_ptp_msg",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_CROSS_DROP",
+          "applicable": false
+        }
+      ]
+    },
+    "mplane": {
+      "baseline_ok": true,
+      "baseline": {
+        "pos": "PASS",
+        "neg": "EXPECTED_FAILURE_DETECTED",
+        "iso": "EXPECTED_FAILURE_DETECTED"
+      },
+      "dead_checks": [
+        "RANGE_ant_cal",
+        "RANGE_item_id",
+        "RANGE_seq",
+        "RANGE_sw_slot"
+      ],
+      "valid": 5,
+      "kill_base": 5,
+      "kill_iso": 5,
+      "equivalent_dead": 1,
+      "kill_rate_base": 100.0,
+      "kill_rate_iso": 100.0,
+      "open_survivors": [],
+      "detail": [
+        {
+          "op": "PACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "PACK_FIELD_ZERO",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "UNPACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "LEGAL_CONST_DROP",
+          "dropped": "CONST_version",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_RANGE_DROP",
+          "dropped": "RANGE_item_id",
+          "pos": "PASS",
+          "neg": "EXPECTED_FAILURE_DETECTED",
+          "iso": "EXPECTED_FAILURE_DETECTED",
+          "kill_base": false,
+          "kill_iso": false,
+          "disposition": "EQUIVALENT_DEAD",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_ENUM_DROP",
+          "dropped": "ENUM_netconf_op",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_CROSS_DROP",
+          "applicable": false
+        }
+      ]
+    },
+    "beamforming": {
+      "baseline_ok": true,
+      "baseline": {
+        "pos": "PASS",
+        "neg": "EXPECTED_FAILURE_DETECTED",
+        "iso": "EXPECTED_FAILURE_DETECTED"
+      },
+      "dead_checks": [
+        "RANGE_beam_id",
+        "RANGE_codebook_idx",
+        "RANGE_seq"
+      ],
+      "valid": 6,
+      "kill_base": 4,
+      "kill_iso": 6,
+      "equivalent_dead": 1,
+      "kill_rate_base": 66.7,
+      "kill_rate_iso": 100.0,
+      "open_survivors": [],
+      "detail": [
+        {
+          "op": "PACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "PACK_FIELD_ZERO",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "UNPACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "LEGAL_CONST_DROP",
+          "dropped": "CONST_version",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_RANGE_DROP",
+          "dropped": "RANGE_beam_id",
+          "pos": "PASS",
+          "neg": "EXPECTED_FAILURE_DETECTED",
+          "iso": "EXPECTED_FAILURE_DETECTED",
+          "kill_base": false,
+          "kill_iso": false,
+          "disposition": "EQUIVALENT_DEAD",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_ENUM_DROP",
+          "dropped": "ENUM_num_ports",
+          "pos": "PASS",
+          "neg": "EXPECTED_FAILURE_DETECTED",
+          "iso": "FAIL",
+          "kill_base": false,
+          "kill_iso": true,
+          "disposition": "KILLED_BY_ISOLATION",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_CROSS_DROP",
+          "dropped": "CROSS_0",
+          "pos": "PASS",
+          "neg": "EXPECTED_FAILURE_DETECTED",
+          "iso": "FAIL",
+          "kill_base": false,
+          "kill_iso": true,
+          "disposition": "KILLED_BY_ISOLATION",
+          "expected_killer": "neg"
+        }
+      ]
+    },
+    "compression": {
+      "baseline_ok": true,
+      "baseline": {
+        "pos": "PASS",
+        "neg": "EXPECTED_FAILURE_DETECTED",
+        "iso": "EXPECTED_FAILURE_DETECTED"
+      },
+      "dead_checks": [
+        "CROSS",
+        "RANGE_exponent",
+        "RANGE_seq"
+      ],
+      "valid": 5,
+      "kill_base": 5,
+      "kill_iso": 5,
+      "equivalent_dead": 2,
+      "kill_rate_base": 100.0,
+      "kill_rate_iso": 100.0,
+      "open_survivors": [],
+      "detail": [
+        {
+          "op": "PACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "PACK_FIELD_ZERO",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "UNPACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "LEGAL_CONST_DROP",
+          "dropped": "CONST_version",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_RANGE_DROP",
+          "dropped": "RANGE_exponent",
+          "pos": "PASS",
+          "neg": "EXPECTED_FAILURE_DETECTED",
+          "iso": "EXPECTED_FAILURE_DETECTED",
+          "kill_base": false,
+          "kill_iso": false,
+          "disposition": "EQUIVALENT_DEAD",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_ENUM_DROP",
+          "dropped": "ENUM_method",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_CROSS_DROP",
+          "dropped": "CROSS_0",
+          "pos": "PASS",
+          "neg": "EXPECTED_FAILURE_DETECTED",
+          "iso": "EXPECTED_FAILURE_DETECTED",
+          "kill_base": false,
+          "kill_iso": false,
+          "disposition": "EQUIVALENT_DEAD",
+          "expected_killer": "neg"
+        }
+      ]
+    },
+    "prach": {
+      "baseline_ok": true,
+      "baseline": {
+        "pos": "PASS",
+        "neg": "EXPECTED_FAILURE_DETECTED",
+        "iso": "EXPECTED_FAILURE_DETECTED"
+      },
+      "dead_checks": [
+        "RANGE_fr",
+        "RANGE_occasion",
+        "RANGE_seq",
+        "RANGE_zc_root"
+      ],
+      "valid": 6,
+      "kill_base": 6,
+      "kill_iso": 6,
+      "equivalent_dead": 0,
+      "kill_rate_base": 100.0,
+      "kill_rate_iso": 100.0,
+      "open_survivors": [],
+      "detail": [
+        {
+          "op": "PACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "PACK_FIELD_ZERO",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "UNPACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "LEGAL_CONST_DROP",
+          "dropped": "CONST_version",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_RANGE_DROP",
+          "dropped": "RANGE_numerology",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_ENUM_DROP",
+          "dropped": "ENUM_format",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_CROSS_DROP",
+          "applicable": false
+        }
+      ]
+    },
+    "mimo_massive": {
+      "baseline_ok": true,
+      "baseline": {
+        "pos": "PASS",
+        "neg": "EXPECTED_FAILURE_DETECTED",
+        "iso": "EXPECTED_FAILURE_DETECTED"
+      },
+      "dead_checks": [
+        "RANGE_precoder_idx",
+        "RANGE_seq"
+      ],
+      "valid": 7,
+      "kill_base": 5,
+      "kill_iso": 7,
+      "equivalent_dead": 0,
+      "kill_rate_base": 71.4,
+      "kill_rate_iso": 100.0,
+      "open_survivors": [],
+      "detail": [
+        {
+          "op": "PACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "PACK_FIELD_ZERO",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "UNPACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "LEGAL_CONST_DROP",
+          "dropped": "CONST_version",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_RANGE_DROP",
+          "dropped": "RANGE_num_layers",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_ENUM_DROP",
+          "dropped": "ENUM_ant_cfg",
+          "pos": "PASS",
+          "neg": "EXPECTED_FAILURE_DETECTED",
+          "iso": "FAIL",
+          "kill_base": false,
+          "kill_iso": true,
+          "disposition": "KILLED_BY_ISOLATION",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_CROSS_DROP",
+          "dropped": "CROSS_0",
+          "pos": "PASS",
+          "neg": "EXPECTED_FAILURE_DETECTED",
+          "iso": "FAIL",
+          "kill_base": false,
+          "kill_iso": true,
+          "disposition": "KILLED_BY_ISOLATION",
+          "expected_killer": "neg"
+        }
+      ]
+    },
+    "bwp": {
+      "baseline_ok": true,
+      "baseline": {
+        "pos": "PASS",
+        "neg": "EXPECTED_FAILURE_DETECTED",
+        "iso": "EXPECTED_FAILURE_DETECTED"
+      },
+      "dead_checks": [
+        "RANGE_active",
+        "RANGE_bwp_id",
+        "RANGE_fr",
+        "RANGE_seq"
+      ],
+      "valid": 5,
+      "kill_base": 5,
+      "kill_iso": 5,
+      "equivalent_dead": 1,
+      "kill_rate_base": 100.0,
+      "kill_rate_iso": 100.0,
+      "open_survivors": [],
+      "detail": [
+        {
+          "op": "PACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "PACK_FIELD_ZERO",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "UNPACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "LEGAL_CONST_DROP",
+          "dropped": "CONST_version",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_RANGE_DROP",
+          "dropped": "RANGE_bwp_id",
+          "pos": "PASS",
+          "neg": "EXPECTED_FAILURE_DETECTED",
+          "iso": "EXPECTED_FAILURE_DETECTED",
+          "kill_base": false,
+          "kill_iso": false,
+          "disposition": "EQUIVALENT_DEAD",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_ENUM_DROP",
+          "dropped": "ENUM_bw_mhz",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_CROSS_DROP",
+          "applicable": false
+        }
+      ]
+    },
+    "mmwave": {
+      "baseline_ok": true,
+      "baseline": {
+        "pos": "PASS",
+        "neg": "EXPECTED_FAILURE_DETECTED",
+        "iso": "EXPECTED_FAILURE_DETECTED"
+      },
+      "dead_checks": [
+        "RANGE_beam_id",
+        "RANGE_seq"
+      ],
+      "valid": 6,
+      "kill_base": 6,
+      "kill_iso": 6,
+      "equivalent_dead": 0,
+      "kill_rate_base": 100.0,
+      "kill_rate_iso": 100.0,
+      "open_survivors": [],
+      "detail": [
+        {
+          "op": "PACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "PACK_FIELD_ZERO",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "UNPACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "LEGAL_CONST_DROP",
+          "dropped": "CONST_version",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_RANGE_DROP",
+          "dropped": "RANGE_numerology",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_ENUM_DROP",
+          "dropped": "ENUM_band",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_CROSS_DROP",
+          "applicable": false
+        }
+      ]
+    },
+    "laa": {
+      "baseline_ok": true,
+      "baseline": {
+        "pos": "PASS",
+        "neg": "EXPECTED_FAILURE_DETECTED",
+        "iso": "EXPECTED_FAILURE_DETECTED"
+      },
+      "dead_checks": [
+        "RANGE_burst_type",
+        "RANGE_cap",
+        "RANGE_lbt_result",
+        "RANGE_seq"
+      ],
+      "valid": 5,
+      "kill_base": 5,
+      "kill_iso": 5,
+      "equivalent_dead": 1,
+      "kill_rate_base": 100.0,
+      "kill_rate_iso": 100.0,
+      "open_survivors": [],
+      "detail": [
+        {
+          "op": "PACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "PACK_FIELD_ZERO",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "UNPACK_SWAP",
+          "dropped": null,
+          "pos": "FAIL",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "pos"
+        },
+        {
+          "op": "LEGAL_CONST_DROP",
+          "dropped": "CONST_version",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_RANGE_DROP",
+          "dropped": "RANGE_lbt_result",
+          "pos": "PASS",
+          "neg": "EXPECTED_FAILURE_DETECTED",
+          "iso": "EXPECTED_FAILURE_DETECTED",
+          "kill_base": false,
+          "kill_iso": false,
+          "disposition": "EQUIVALENT_DEAD",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_ENUM_DROP",
+          "dropped": "ENUM_lbt_cat",
+          "pos": "PASS",
+          "neg": "FAIL",
+          "iso": "FAIL",
+          "kill_base": true,
+          "kill_iso": true,
+          "disposition": "KILLED_BASE",
+          "expected_killer": "neg"
+        },
+        {
+          "op": "LEGAL_CROSS_DROP",
+          "applicable": false
+        }
+      ]
+    }
+  },
+  "operators": [
+    "PACK_SWAP",
+    "PACK_FIELD_ZERO",
+    "UNPACK_SWAP",
+    "LEGAL_CONST_DROP",
+    "LEGAL_RANGE_DROP",
+    "LEGAL_ENUM_DROP",
+    "LEGAL_CROSS_DROP"
+  ],
+  "summary": {
+    "mutants_valid": 73,
+    "kill_base": 67,
+    "kill_iso": 73,
+    "equivalent_dead": 9,
+    "open_survivors": 0,
+    "compile_fail": 0,
+    "kill_rate_base": 91.8,
+    "kill_rate_iso": 100.0
+  }
+}

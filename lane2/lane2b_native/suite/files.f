@@ -1,0 +1,14 @@
+ecpri_transport_uvm_pkg.sv
+cpri_eth_uvm_pkg.sv
+uplane_uvm_pkg.sv
+cplane_uvm_pkg.sv
+splane_uvm_pkg.sv
+mplane_uvm_pkg.sv
+beamforming_uvm_pkg.sv
+compression_uvm_pkg.sv
+prach_uvm_pkg.sv
+mimo_massive_uvm_pkg.sv
+bwp_uvm_pkg.sv
+mmwave_uvm_pkg.sv
+laa_uvm_pkg.sv
+oran_uvm_tb_top.sv

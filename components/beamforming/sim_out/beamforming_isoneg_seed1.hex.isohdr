@@ -1,0 +1,24 @@
+{
+ "isolable": [
+  "CONST_version",
+  "ENUM_num_ports",
+  "RANGE_num_layers",
+  "ENUM_section_ext",
+  "CONST_rsvd",
+  "CROSS"
+ ],
+ "non_isolable": [
+  [
+   "RANGE_beam_id",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_codebook_idx",
+   "unsat-dead-or-coupled"
+  ],
+  [
+   "RANGE_seq",
+   "unsat-dead-or-coupled"
+  ]
+ ]
+}

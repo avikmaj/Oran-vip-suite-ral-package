@@ -1,0 +1,59 @@
+COVROW,netconf_op=1,datastore=2,ant_cal=1,seq=48
+COVROW,netconf_op=3,datastore=2,ant_cal=0,seq=15
+COVROW,netconf_op=4,datastore=2,ant_cal=0,seq=119
+COVROW,netconf_op=4,datastore=2,ant_cal=0,seq=0
+COVROW,netconf_op=4,datastore=2,ant_cal=0,seq=17
+COVROW,netconf_op=3,datastore=2,ant_cal=1,seq=201
+COVROW,netconf_op=0,datastore=2,ant_cal=0,seq=118
+COVROW,netconf_op=0,datastore=2,ant_cal=1,seq=66
+COVROW,netconf_op=4,datastore=2,ant_cal=0,seq=182
+COVROW,netconf_op=0,datastore=2,ant_cal=0,seq=0
+COVROW,netconf_op=0,datastore=2,ant_cal=0,seq=143
+COVROW,netconf_op=0,datastore=2,ant_cal=0,seq=150
+COVROW,netconf_op=2,datastore=2,ant_cal=1,seq=0
+COVROW,netconf_op=2,datastore=2,ant_cal=0,seq=82
+COVROW,netconf_op=4,datastore=2,ant_cal=1,seq=164
+COVROW,netconf_op=3,datastore=2,ant_cal=0,seq=152
+COVROW,netconf_op=3,datastore=2,ant_cal=0,seq=235
+COVROW,netconf_op=4,datastore=2,ant_cal=0,seq=252
+COVROW,netconf_op=3,datastore=2,ant_cal=0,seq=0
+COVROW,netconf_op=3,datastore=2,ant_cal=0,seq=0
+COVROW,netconf_op=4,datastore=2,ant_cal=0,seq=170
+COVROW,netconf_op=2,datastore=2,ant_cal=1,seq=208
+COVROW,netconf_op=2,datastore=2,ant_cal=1,seq=136
+COVROW,netconf_op=2,datastore=2,ant_cal=0,seq=7
+COVROW,netconf_op=2,datastore=2,ant_cal=1,seq=123
+COVROW,netconf_op=0,datastore=2,ant_cal=1,seq=20
+COVROW,netconf_op=2,datastore=2,ant_cal=1,seq=233
+COVROW,netconf_op=2,datastore=2,ant_cal=1,seq=126
+COVROW,netconf_op=2,datastore=2,ant_cal=0,seq=21
+COVROW,netconf_op=2,datastore=2,ant_cal=0,seq=0
+COVROW,netconf_op=3,datastore=2,ant_cal=0,seq=183
+COVROW,netconf_op=1,datastore=2,ant_cal=0,seq=163
+COVROW,netconf_op=1,datastore=2,ant_cal=0,seq=105
+COVROW,netconf_op=3,datastore=2,ant_cal=0,seq=128
+COVROW,netconf_op=4,datastore=2,ant_cal=1,seq=9
+COVROW,netconf_op=2,datastore=2,ant_cal=1,seq=45
+COVROW,netconf_op=0,datastore=2,ant_cal=0,seq=115
+COVROW,netconf_op=2,datastore=2,ant_cal=0,seq=188
+COVROW,netconf_op=1,datastore=2,ant_cal=1,seq=0
+COVROW,netconf_op=4,datastore=2,ant_cal=0,seq=201
+COVROW,netconf_op=2,datastore=2,ant_cal=0,seq=0
+COVROW,netconf_op=2,datastore=2,ant_cal=0,seq=221
+COVROW,netconf_op=2,datastore=2,ant_cal=0,seq=151
+COVROW,netconf_op=3,datastore=2,ant_cal=0,seq=105
+COVROW,netconf_op=1,datastore=2,ant_cal=0,seq=86
+COVROW,netconf_op=3,datastore=2,ant_cal=1,seq=12
+COVROW,netconf_op=0,datastore=2,ant_cal=1,seq=0
+COVROW,netconf_op=2,datastore=2,ant_cal=1,seq=193
+COVROW,netconf_op=4,datastore=2,ant_cal=1,seq=156
+COVROW,netconf_op=3,datastore=2,ant_cal=0,seq=0
+SBSUMMARY,txns=50,legal_err=0,pack_err=0,rt_err=0
+SVA_EXERCISED,legality=50,roundtrip=50,pack=50
+--- UVM Report Summary ---
+UVM_INFO :  50
+UVM_WARNING : 0
+UVM_ERROR : 0
+UVM_FATAL : 0
+** TEST PASSED **
+- /home/claude/oran_vip_suite/components/mplane/tb/mplane_tb_top.sv:61: Verilog $finish
